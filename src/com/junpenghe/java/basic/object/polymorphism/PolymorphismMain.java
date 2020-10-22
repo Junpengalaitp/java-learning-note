@@ -13,7 +13,7 @@ import com.junpenghe.java.basic.object.inheritance.Triangle;
  *
  * Such code is unaffected by the addition of new types, and adding new types is a common way to extend an
  * object-oriented program to handle new situations. For example, you can derive a new subtype of shape called
- * “pentagon” without modifying methods that deal only with generic shapes. This ability to easily extend a design by
+ * "pentagon" without modifying methods that deal only with generic shapes. This ability to easily extend a design by
  * deriving new subtypes is one of the essential ways to encapsulate change. This improves designs while reducing
  * the cost of software maintenance. There’s a problem when attempting to treat derived-type objects as their
  * generic base types (circles as shapes, bicycles as vehicles, cormorants as birds, etc.).
