@@ -47,9 +47,12 @@ package com.junpenghe.java.basic.object;
 public class OOP {
 
     /**
-     * Interface
+     * An Object Has an Interface
+     *
      * Each object accepts only certain requests, defined by
      * its interface The type determines the interface
+     *
+     * 对象有对外的接口
      *
      * 我们向对象发出的请求是通过它的“接口”（Interface）定义的，对象的“类型”或“类”则规定了它的接口形式。
      * “类型”与“接口”的对应关系是面向对象程序设计的基础。
@@ -60,4 +63,78 @@ public class OOP {
         void brighten() {}
         void dim() {}
     }
+
+    /**
+     * Objects Provide Services
+     *
+     * Your program itself will provide services to the user, and it will accomplish this
+     * by using the service offered by other objects.
+     *
+     * Treating objects as service providers is useful not only during the design process,
+     * but also when someone else is trying to understand your code or reuse an object.
+     * If they can see the value of the object based on what service it provides,
+     * it makes it much easier to fit it into the design.
+     *
+     * High cohesion is a fundamental quality of software design: It means the various
+     * aspects of a software component (such as an object, although this could also apply
+     * to a method or a library of objects) “fit together” well.
+     *
+     * 在开发或理解程序设计时，我们可以将对象看成是“服务提供者”。你的程序本身将为用户提供服务，
+     * 并且它能通过调用其他对象提供的服务来实现这一点。我们的最终目标是开发或调用工具库中已有的一些对象，
+     * 提供理想的服务来解决问题。
+     *
+     * 那么问题来了：我们该选择哪个对象来解决问题呢？例如，你正在开发一个记事本程序。你可能会想到在屏幕输入默认的记事本对象，
+     * 一个用于检测不同类型打印机并执行打印的对象。这些对象中的某些已经有了。那对于还没有的对象，我们该设计成啥样呢？这些对象需要提供哪些服务，
+     * 以及还需要调用其他哪些对象？
+     *
+     * 我们可以将这些问题一一分解，抽象成一组服务。软件设计的基本原则是高内聚：每个组件的内部作用明确，功能紧密相关。
+     * 然而经常有人将太多功能塞进一个对象中。例如：在支票打印模块中，你需要设计一个可以同时读取文本格式又能正确识别不同打印机型号的对象。
+     * 正确的做法是提供三个或更多对象：一个对象检查所有排版布局的目录；一个或一组可以识别不同打印机型号的对象展示通用的打印界面；
+     * 第三个对象组合上述两个服务来完成任务。这样，每个对象都提供了一组紧密的服务。在良好的面向对象设计中，每个对象功能单一且高效。
+     * 这样的程序设计可以提高我们代码的复用性，同时也方便别人阅读和理解我们的代码。只有让人知道你提供什么服务，别人才能更好地将其应用到其他模块或程序中。
+     */
+
+    /**
+     * The Hidden Implementation
+     *
+     * The class creator can change the hidden portion at will without worrying about the impact on anyone else.
+     * Hiding the implementation reduces program bugs.
+     *
+     * 封装
+     * 我们可以把编程的侧重领域划分为研发和应用。应用程序员调用研发程序员构建的基础工具类来做快速开发。研发程序员开发一个工具类，
+     * 该工具类仅向应用程序员公开必要的内容，并隐藏内部实现的细节。这样可以有效地避免该工具类被错误的使用和更改，从而减少程序出错的可能。
+     * 彼此职责划分清晰，相互协作。当应用程序员调用研发程序员开发的工具类时，双方建立了关系。
+     * 应用程序员通过使用现成的工具类组装应用程序或者构建更大的工具库。如果工具类的创建者将类的内部所有信息都公开给调用者，
+     * 那么有些使用规则就不容易被遵守。因为前者无法保证后者是否会按照正确的规则来使用，甚至是改变该工具类。只有设定访问控制，
+     * 才能从根本上阻止这种情况的发生。
+     *
+     * 因此，使用访问控制的原因有以下两点：
+     *
+     * 让应用程序员不要触摸他们不应该触摸的部分。（请注意，这也是一个哲学决策。部分编程语言认为如果程序员有需要，则应该让他们访问细节部分。）；
+     *
+     * 使类库的创建者（研发程序员）在不影响后者使用的情况下完善更新工具库。例如，我们开发了一个功能简单的工具类，
+     * 后来发现可以通过优化代码来提高执行速度。
+     * 假如工具类的接口和实现部分明确分开并受到保护，那我们就可以轻松地完成改造。
+     */
+
+    /**
+     * Reusing the Implementation
+     *
+     * Code reuse is an argument for object-oriented programming languages.
+     * The simplest way to reuse a class is to use an object of that class directly,
+     * but you can also place an object of that class inside a new class.
+     * Your new class can be made up of any number and type of other objects, in any combination,
+     * to produce the desired functionality.
+     *
+     * 一个类经创建和测试后，理应是可复用的。然而很多时候，由于程序员没有足够的编程经验和远见，我们的代码复用性并不强。
+     *
+     * 代码和设计方案的复用性是面向对象程序设计的优点之一。我们可以通过重复使用某个类的对象来达到这种复用性。
+     * 同时，我们也可以将一个类的对象作为另一个类的成员变量使用。新的类可以是由任意数量和任意类型的其他对象构成。
+     * 这里涉及到“组合”和“聚合”的概念：
+     *
+     * 组合（Composition）经常用来表示“拥有”关系（has-a relationship）。例如，“汽车拥有引擎”。
+     *
+     * 聚合（Aggregation）动态的组合。
+     */
+
 }
