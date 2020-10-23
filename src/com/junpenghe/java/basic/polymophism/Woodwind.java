@@ -1,18 +1,18 @@
 package com.junpenghe.java.basic.polymophism;
 
-class Stringed extends Instrument {
+public class Woodwind extends Instrument {
     @Override
     public void play(Note n) {
-        System.out.println("Stringed.play() " + n);
+        System.out.println("Woodwind.play()" + n);
     }
 
     @Override
     String what() {
-        return "Stringed";
+        return "Woodwind";
     }
 
     @Override
     void adjust() {
-        System.out.println("Adjusting Stringed");
+        System.out.println("Adjusting Woodwind");
     }
 }

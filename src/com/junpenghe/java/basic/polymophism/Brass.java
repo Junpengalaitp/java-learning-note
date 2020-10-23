@@ -5,4 +5,14 @@ class Brass extends Instrument {
     public void play(Note n) {
         System.out.println("Brass.play() " + n);
     }
+
+    @Override
+    void adjust() {
+        System.out.println("Adjusting Brass");
+    }
+
+    @Override
+    String what() {
+        return "Brass";
+    }
 }
