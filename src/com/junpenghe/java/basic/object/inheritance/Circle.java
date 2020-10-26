@@ -1,5 +1,8 @@
 package com.junpenghe.java.basic.object.inheritance;
 
+/**
+ * @author
+ */
 public class Circle extends Shape {
 
     private String color = "circleColor";
