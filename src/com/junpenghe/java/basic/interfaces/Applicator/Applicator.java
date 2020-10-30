@@ -1,9 +1,5 @@
 package com.junpenghe.java.basic.interfaces.Applicator;
 
-import com.junpenghe.java.basic.interfaces.filters.LowPass;
-
-import java.util.Arrays;
-
 /**
  * The Applicator.apply() method takes any kind of Processor, applies it to an Object and prints the results.
  * Creating a method that behaves differently depending on the argument object you pass it is called the

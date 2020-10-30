@@ -1,6 +1,6 @@
 package com.junpenghe.java.basic.interfaces.Applicator;
 
-class Processor {
+public class Processor {
     public String name() {
         return getClass().getSimpleName();
     }

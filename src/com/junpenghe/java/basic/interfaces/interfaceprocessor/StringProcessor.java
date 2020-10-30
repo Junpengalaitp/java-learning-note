@@ -17,7 +17,7 @@ public interface StringProcessor extends Processor {
     }
 }
 
-class Upcase implements StringProcessor {
+class Upcase implements Processor {
     @Override
     // Covariant return:
     public String process(Object input) {
@@ -25,14 +25,14 @@ class Upcase implements StringProcessor {
     }
 }
 
-class Downcase implements StringProcessor {
+class Downcase implements Processor {
     @Override
     public String process(Object input) {
         return ((String) input).toLowerCase();
     }
 }
 
-class Splitter implements StringProcessor {
+class Splitter implements Processor {
     @Override
     public String process(Object input) {
         return Arrays.toString(((String) input).split(" "));
