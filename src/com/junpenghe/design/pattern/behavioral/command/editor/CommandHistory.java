@@ -14,7 +14,7 @@ public class CommandHistory {
     }
 
     public Command pop() {
-        return history.pop();
+        return history.pollLast();
     }
 
     public boolean isEmpty() {
