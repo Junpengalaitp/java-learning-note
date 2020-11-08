@@ -1,7 +1,8 @@
 import org.apache.zookeeper.*;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
 
 public class LeaderElection implements Watcher {
     private static final String ZOOKEEPER_ADDRESS = "localhost:2181";
@@ -57,6 +58,7 @@ public class LeaderElection implements Watcher {
     private void close() throws InterruptedException {
         this.zooKeeper.close();
     }
+
 
     @Override
     public void process(WatchedEvent event) {
