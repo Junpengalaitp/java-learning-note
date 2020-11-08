@@ -10,26 +10,29 @@ public class LeaderElection implements Watcher {
     private ZooKeeper zooKeeper;
     private String currentZnodeName;
 
-    public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
+    // NOTE - Don't forget to create the /election ZNode
+    public static void main(String[] arg) throws IOException, InterruptedException, KeeperException {
         LeaderElection leaderElection = new LeaderElection();
+
         leaderElection.connectToZookeeper();
         leaderElection.volunteerForLeadership();
         leaderElection.electLeader();
         leaderElection.run();
         leaderElection.close();
         System.out.println("Disconnected from Zookeeper, exiting application");
-
     }
 
     public void volunteerForLeadership() throws KeeperException, InterruptedException {
-        String znodePrefix = ELECTION_NAMESPACE + "c_";
+        String znodePrefix = ELECTION_NAMESPACE + "/c_";
         String znodeFullPath = zooKeeper.create(znodePrefix, new byte[]{}, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
+
         System.out.println("znode name " + znodeFullPath);
         this.currentZnodeName = znodeFullPath.replace(ELECTION_NAMESPACE + "/", "");
     }
 
     public void electLeader() throws KeeperException, InterruptedException {
         List<String> children = zooKeeper.getChildren(ELECTION_NAMESPACE, false);
+
         Collections.sort(children);
         String smallestChild = children.get(0);
 
@@ -37,6 +40,7 @@ public class LeaderElection implements Watcher {
             System.out.println("I am the leader");
             return;
         }
+
         System.out.println("I am not the leader, " + smallestChild + " is the leader");
     }
 
@@ -44,14 +48,14 @@ public class LeaderElection implements Watcher {
         this.zooKeeper = new ZooKeeper(ZOOKEEPER_ADDRESS, SESSION_TIMEOUT, this);
     }
 
-    public void run() throws InterruptedException {
+    private void run() throws InterruptedException {
         synchronized (zooKeeper) {
             zooKeeper.wait();
         }
     }
 
-    public void close() throws InterruptedException {
-        zooKeeper.close();
+    private void close() throws InterruptedException {
+        this.zooKeeper.close();
     }
 
     @Override
@@ -62,7 +66,7 @@ public class LeaderElection implements Watcher {
                     System.out.println("Successfully connected to Zookeeper");
                 } else {
                     synchronized (zooKeeper) {
-                        System.out.println("Disconnected from Zookeeper Event");
+                        System.out.println("Disconnected from Zookeeper event");
                         zooKeeper.notifyAll();
                     }
                 }
