@@ -3,3 +3,4 @@
 /src/distributed.systems/target/
 /src/com/junpenghe/distributed/systems/zookeeper/leader/election/target/classes/
 /src/com/junpenghe/distributed/systems/zookeeper/watcher/target/classes/
+/src/com/junpenghe/distributed/systems/zookeeper/registry/target/classes/
