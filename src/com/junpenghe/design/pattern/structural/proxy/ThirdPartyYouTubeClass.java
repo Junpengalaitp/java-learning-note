@@ -1,7 +1,6 @@
 package com.junpenghe.design.pattern.structural.proxy;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Junpeng He
@@ -47,7 +46,7 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
         System.out.print("Downloading populars... ");
 
         experienceNetworkLatency();
-        HashMap<String, Video> hmap = new HashMap<String, Video>();
+        HashMap<String, Video> hmap = new HashMap<>();
         hmap.put("catzzzzzzzzz", new Video("sadgahasgdas", "Catzzzz.avi"));
         hmap.put("mkafksangasj", new Video("mkafksangasj", "Dog play with ball.mp4"));
         hmap.put("dancesvideoo", new Video("asdfas3ffasd", "Dancing video.mpq"));
