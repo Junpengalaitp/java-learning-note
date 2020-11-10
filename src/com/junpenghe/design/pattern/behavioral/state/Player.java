@@ -1,4 +1,4 @@
-package com.junpenghe.design.pattern.structural.state;
+package com.junpenghe.design.pattern.behavioral.state;
 
 import java.util.ArrayList;
 import java.util.List;

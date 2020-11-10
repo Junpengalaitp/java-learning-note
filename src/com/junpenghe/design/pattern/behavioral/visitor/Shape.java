@@ -1,4 +1,4 @@
-package com.junpenghe.design.pattern.structural.visitor;
+package com.junpenghe.design.pattern.behavioral.visitor;
 
 /**
  * @author Junpeng He

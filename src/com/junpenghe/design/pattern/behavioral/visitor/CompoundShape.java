@@ -1,4 +1,4 @@
-package com.junpenghe.design.pattern.structural.visitor;
+package com.junpenghe.design.pattern.behavioral.visitor;
 
 import java.util.ArrayList;
 import java.util.List;

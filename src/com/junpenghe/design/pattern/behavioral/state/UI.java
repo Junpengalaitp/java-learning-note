@@ -1,4 +1,4 @@
-package com.junpenghe.design.pattern.structural.state;
+package com.junpenghe.design.pattern.behavioral.state;
 
 import javax.swing.*;
 import java.awt.*;
