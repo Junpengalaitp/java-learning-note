@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Class<String> stringClass = String.class;
         Map<String, Integer> mapObject = new HashMap<>();
         Class<?> hashMapClass = mapObject.getClass();
