@@ -1,12 +1,14 @@
 package com.junpenghe.reflection.fields;
 
 import java.lang.reflect.Field;
+import java.util.stream.IntStream;
 
 public class Main {
 
     public static void main(String[] args) throws IllegalAccessException {
         Movie movie = new Movie("Lord of the Rings", 2001, 12.99, true, Category.ADVENTURE);
         printDeclaredFieldsInfo(Movie.class, movie);
+        IntStream.of(new int[]{1, 2}).sum();
     }
 
     public static <T> void printDeclaredFieldsInfo(Class<? extends T> clazz, T instance) throws IllegalAccessException {
