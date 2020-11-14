@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         Address address = createInstanceWithArguments(Address.class, "First Street", 10);
-        Person person = createInstanceWithArguments(Person.class, address, "John", 20);
+        Person person = createInstanceWithArguments(Person.class, address, "John", 10);
         System.out.println(person);
     }
 
@@ -30,10 +30,12 @@ public class Main {
         if (classes.length != args.length) {
             return false;
         }
-//        for (int i = 0; i < classes.length; i++) {
-//            if (!args[i].getClass().equals(classes[i]) && !args[i].getClass().equals(classes[i])) {
-//                return false;
-//            }
+//        List<Class<?>> argClasses = new ArrayList<>();
+//        for (Object arg : args) {
+//            argClasses.add(arg.getClass());
+//        }
+//        if (!Arrays.equals(classes, argClasses.toArray())) {
+//            return false;
 //        }
         return true;
     }
