@@ -1,4 +1,4 @@
-package com.junpenghe.reflection.annotation.config.example.annotation;
+package com.junpenghe.reflection.annotation.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
