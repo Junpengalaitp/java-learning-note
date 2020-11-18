@@ -25,7 +25,6 @@ public class Annotations {
     @Target({ElementType.METHOD})
     @Retention(RetentionPolicy.RUNTIME)
     public @interface FinalResult {
-        String value();
     }
 
 

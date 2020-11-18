@@ -42,6 +42,10 @@ public class Main {
     }
 
 
+    /**
+     * @param clazz
+     * @return map annotated value to Method
+     */
     private static Map<String, Method> getOperationToMethod(Class<?> clazz) {
         Map<String, Method> operationNameToMethod = new HashMap<>();
         for (Method method : clazz.getDeclaredMethods()) {
@@ -55,6 +59,11 @@ public class Main {
         return operationNameToMethod;
     }
 
+    /**
+     * get the method that produces final result
+     * @param clazz
+     * @return
+     */
     private static Method finalFinalResultMethod(Class<?> clazz) {
         for (Method method : clazz.getDeclaredMethods()) {
             if (method.isAnnotationPresent(Annotations.FinalResult.class)) {
