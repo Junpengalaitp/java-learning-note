@@ -6,12 +6,14 @@ package com.junpenghe.design.pattern.creational.singleton;
 
 interface Resource {
     int getValue();
+
     void setValue(int x);
 }
 
 final class Singleton {
     private static final class ResourceImpl implements Resource {
         private int i;
+
         private ResourceImpl(int i) {
             this.i = i;
         }
@@ -47,7 +49,7 @@ public class SingletonPattern {
         try {
             // 不能这么做，会发生：compile-time error（编译时错误）.
             // Singleton s3 = (Singleton)s2.clone();
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

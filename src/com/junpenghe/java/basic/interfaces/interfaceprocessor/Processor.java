@@ -1,7 +1,9 @@
 package com.junpenghe.java.basic.interfaces.interfaceprocessor;
 
 public interface Processor {
-    default String name() { return getClass().getSimpleName(); }
+    default String name() {
+        return getClass().getSimpleName();
+    }
 
     Object process(Object input);
 }

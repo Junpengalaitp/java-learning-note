@@ -19,6 +19,7 @@ public class Factories {
 
 interface Service {
     void method1();
+
     void method2();
 }
 
@@ -27,7 +28,8 @@ interface ServiceFactory {
 }
 
 class Service1 implements Service {
-    Service1() {}
+    Service1() {
+    }
 
     @Override
     public void method1() {
@@ -48,7 +50,8 @@ class Service1Factory implements ServiceFactory {
 }
 
 class Service2 implements Service {
-    Service2() {}
+    Service2() {
+    }
 
     @Override
     public void method1() {

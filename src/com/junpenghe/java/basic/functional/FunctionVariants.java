@@ -6,10 +6,12 @@ import java.util.function.*;
  * @author Junpeng He
  */
 
-class Foo {}
+class Foo {
+}
 
 class Bar {
     Foo f;
+
     Bar(Foo f) {
         this.f = f;
     }
@@ -17,6 +19,7 @@ class Bar {
 
 class IBaz {
     int i;
+
     IBaz(int i) {
         this.i = i;
     }
@@ -24,6 +27,7 @@ class IBaz {
 
 class LBaz {
     long l;
+
     LBaz(long l) {
         this.l = l;
     }
@@ -31,6 +35,7 @@ class LBaz {
 
 class DBaz {
     double d;
+
     DBaz(double d) {
         this.d = d;
     }

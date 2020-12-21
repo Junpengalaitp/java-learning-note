@@ -4,8 +4,11 @@ package com.junpenghe.design.pattern.structural.adapter.simple;
  * @author Junpeng He
  */
 class WhatIHave {
-    public void g() {}
-    public void h() {}
+    public void g() {
+    }
+
+    public void h() {
+    }
 }
 
 interface WhatIWant {
@@ -14,6 +17,7 @@ interface WhatIWant {
 
 class ProxyAdapter implements WhatIWant {
     WhatIHave whatIHave;
+
     ProxyAdapter(WhatIHave wih) {
         this.whatIHave = wih;
     }
@@ -56,6 +60,7 @@ class WhatIHave3 extends WhatIHave {
             h();
         }
     }
+
     public WhatIWant whatIWant() {
         return new InnerAdapter();
     }

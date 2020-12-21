@@ -14,6 +14,7 @@ public class History {
     private class Pair {
         Command command;
         Memento memento;
+
         Pair(Command c, Memento m) {
             command = c;
             memento = m;

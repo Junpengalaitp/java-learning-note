@@ -4,8 +4,11 @@ package com.junpenghe.java.basic.type.info;
  * @author Junpeng He
  */
 
-class Building {}
-class House extends Building {}
+class Building {
+}
+
+class House extends Building {
+}
 
 public class ClassCasts {
     public static void main(String[] args) {

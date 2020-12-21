@@ -8,6 +8,7 @@ public class Manx extends Cat {
         super(name);
     }
 
-    public Manx() {super();
+    public Manx() {
+        super();
     }
 }

@@ -19,12 +19,13 @@ public class OptionalMap {
         for (int i = 0; i < elements.length; i++) {
             System.out.println(
                     testStream()
-                    .skip(i)
-                    .findFirst()
-                    .map(func)
+                            .skip(i)
+                            .findFirst()
+                            .map(func)
             );
         }
     }
+
     public static void main(String[] args) {
         // If Optional is not empty, map() first extracts
         // the contents which it then passes

@@ -11,6 +11,7 @@ public class Games {
 
         }
     }
+
     public static void main(String[] args) {
         playGame(new CheckersFactory());
         playGame(new ChessFactory());

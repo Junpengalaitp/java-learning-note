@@ -39,7 +39,7 @@ public class Main {
         }
     }
 
-    private static class Square implements Drawable{
+    private static class Square implements Drawable {
 
         @Override
         public int getNumberOfCorners() {

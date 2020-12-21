@@ -156,7 +156,7 @@ public class CompoundShape extends BaseShape {
     }
 
     public boolean selectChildAt(int x, int y) {
-        Shape child = getChildAt(x,y);
+        Shape child = getChildAt(x, y);
         if (child != null) {
             child.select();
             return true;

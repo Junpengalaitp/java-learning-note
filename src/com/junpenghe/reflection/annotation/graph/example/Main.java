@@ -61,6 +61,7 @@ public class Main {
 
     /**
      * get the method that produces final result
+     *
      * @param clazz
      * @return
      */

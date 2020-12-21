@@ -5,5 +5,6 @@ package com.junpenghe.design.pattern.behavioral.memento;
  */
 public interface Command {
     String getName();
+
     void execute();
 }

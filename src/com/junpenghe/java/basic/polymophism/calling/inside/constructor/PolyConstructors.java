@@ -12,7 +12,7 @@ package com.junpenghe.java.basic.polymophism.calling.inside.constructor;
  * composition, which become null. So if you forget to initialize that reference,
  * you’ll get an exception at run time. Everything else gets zero,
  * usually a telltale value when you are looking at output.
- *
+ * <p>
  * The only safe methods to call inside a constructor are those that are final in the base class.
  * (This also applies to private methods, which are automatically final.)
  * These cannot be overridden and thus cannot produce this kind of surprise.

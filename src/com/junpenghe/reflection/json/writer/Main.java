@@ -45,9 +45,9 @@ public class Main {
 
     private static String formatPrimitiveValue(Field field, Object parentInstance) throws IllegalAccessException {
         if (field.getType().equals(boolean.class)
-            || field.getType().equals(int.class)
-            || field.getType().equals(long.class)
-            || field.getType().equals(short.class)) {
+                || field.getType().equals(int.class)
+                || field.getType().equals(long.class)
+                || field.getType().equals(short.class)) {
             return field.get(parentInstance).toString();
         } else if (field.getType().equals(double.class) || field.getType().equals(float.class)) {
             return String.format("%.02f", field.get(parentInstance));

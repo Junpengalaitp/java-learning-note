@@ -3,6 +3,7 @@ package com.junpenghe.java.basic.polymophism.cleanup;
 public class Frog extends Amphibian {
     private Characteristic p = new Characteristic("Croaks");
     private Description t = new Description("Eats Bugs");
+
     public Frog() {
         System.out.println("Frog");
     }

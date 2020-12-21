@@ -9,12 +9,17 @@ class Cookie {
         System.out.println("Loading Cookie");
     }
 }
+
 class Gum {
-    static { System.out.println("Loading Gum"); }
+    static {
+        System.out.println("Loading Gum");
+    }
 }
 
 class Candy {
-    static { System.out.println("Loading Candy"); }
+    static {
+        System.out.println("Loading Candy");
+    }
 }
 
 

@@ -8,5 +8,7 @@ public class Mouse extends Rodent {
         super(name);
     }
 
-    public Mouse() {super();}
+    public Mouse() {
+        super();
+    }
 }

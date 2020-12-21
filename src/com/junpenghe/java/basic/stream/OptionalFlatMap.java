@@ -21,9 +21,9 @@ public class OptionalFlatMap {
         for (int i = 0; i <= elements.length; i++) {
             System.out.println(
                     testStream()
-                    .skip(i)
-                    .findFirst()
-                    .flatMap(function)
+                            .skip(i)
+                            .findFirst()
+                            .flatMap(function)
             );
         }
     }

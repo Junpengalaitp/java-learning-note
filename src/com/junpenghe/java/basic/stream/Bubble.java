@@ -18,6 +18,7 @@ public class Bubble {
     }
 
     private static int count = 0;
+
     Bubble bubble() {
         return new Bubble(count++);
     }

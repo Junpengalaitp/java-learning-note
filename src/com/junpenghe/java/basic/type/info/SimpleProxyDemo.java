@@ -5,6 +5,7 @@ package com.junpenghe.java.basic.type.info;
  */
 interface Interface {
     void doSomething();
+
     void somethingElse(String arg);
 }
 
@@ -21,9 +22,9 @@ class RealObject implements Interface {
 }
 
 class SimpleProxy implements Interface {
-    private Interface  proxied;
+    private Interface proxied;
 
-    public SimpleProxy(Interface  proxied) {
+    public SimpleProxy(Interface proxied) {
         this.proxied = proxied;
     }
 

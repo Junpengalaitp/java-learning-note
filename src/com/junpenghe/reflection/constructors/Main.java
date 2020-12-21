@@ -60,6 +60,7 @@ public class Main {
             this.age = 0;
             this.address = null;
         }
+
         public Person(String name) {
             this.name = name;
             this.age = 0;

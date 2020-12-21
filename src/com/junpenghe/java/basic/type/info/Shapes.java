@@ -31,7 +31,9 @@ class Square extends Shape {
 
 class Triangle extends Shape {
     @Override
-    public String toString() { return "Triangle"; }
+    public String toString() {
+        return "Triangle";
+    }
 }
 
 

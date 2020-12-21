@@ -6,8 +6,11 @@ import java.util.function.Function;
  * @author Junpeng He
  */
 
-class One {}
-class Two {}
+class One {
+}
+
+class Two {
+}
 
 public class ConsumerFunction {
     static Two consume(Function<One, Two> oneTwo) {

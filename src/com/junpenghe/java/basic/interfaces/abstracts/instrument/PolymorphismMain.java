@@ -2,19 +2,19 @@ package com.junpenghe.java.basic.interfaces.abstracts.instrument;
 
 /**
  * polymorphism deals with decoupling in terms of types.
- *
+ * <p>
  * Polymorphism is the third essential feature of an object-oriented programming language, after data
  * abstraction and inheritance. It provides another dimension of separation of interface from implementation,
  * to decouple what from how. Polymorphism improves code organization and readability as well as the creation
  * of extensible programs that can be "grown" not only during the original creation of the project,
  * but also when new features are desired.
- *
+ * <p>
  * 多态是面向对象编程语言中，继数据抽象和继承之外的第三个重要特性。
- *
+ * <p>
  * 多态提供了另一个维度的接口与实现分离，以解耦做什么和怎么做。
  * 多态不仅能改善代码的组织，提高代码的可读性，
  * 而且能创建有扩展性的程序——无论在最初创建项目时还是在添加新特性时都可以"生长"的程序。
- *
+ * <p>
  * 封装通过合并特征和行为来创建新的数据类型。隐藏实现通过将细节私有化把接口与实现分离。
  * 这种类型的组织机制对于有面向过程编程背景的人来说，更容易理解。而多态是消除类型之间的耦合。
  * 在上一章中，继承允许把一个对象视为它本身的类型或它的基类类型。

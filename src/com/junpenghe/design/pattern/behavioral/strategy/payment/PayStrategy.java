@@ -5,5 +5,6 @@ package com.junpenghe.design.pattern.behavioral.strategy.payment;
  */
 public interface PayStrategy {
     boolean pay(int paymentAmount);
+
     void collectPaymentDetails();
 }

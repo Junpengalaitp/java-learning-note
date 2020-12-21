@@ -11,7 +11,7 @@ public class ReferenceCounting {
                 new Composing(shared),
         };
 
-        for (Composing c: composing) {
+        for (Composing c : composing) {
             c.dispose();
         }
     }

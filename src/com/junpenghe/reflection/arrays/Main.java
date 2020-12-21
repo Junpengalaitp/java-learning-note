@@ -18,7 +18,7 @@ public class Main {
 
             if (element.getClass().isArray()) {
                 inspectArrayValues(element);
-            } else  {
+            } else {
                 System.out.print(element);
             }
 

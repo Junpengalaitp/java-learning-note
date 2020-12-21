@@ -8,6 +8,7 @@ public class Pug extends Dog {
         super(name);
     }
 
-    public Pug() {super();
+    public Pug() {
+        super();
     }
 }

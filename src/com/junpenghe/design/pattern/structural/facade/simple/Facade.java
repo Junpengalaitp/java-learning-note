@@ -5,21 +5,25 @@ package com.junpenghe.design.pattern.structural.facade.simple;
  */
 
 class A {
-    A (int x) {}
+    A(int x) {
+    }
 }
 
 class B {
-    B (long x) {}
+    B(long x) {
+    }
 }
 
 class C {
-    C (double x) {}
+    C(double x) {
+    }
 }
 
 public class Facade {
     static A makeA(int x) {
         return new A(x);
     }
+
     static B makeB(long x) {
         return new B(x);
     }

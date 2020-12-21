@@ -8,5 +8,7 @@ public class Description {
         System.out.println("Creating Description " + s);
     }
 
-    protected void dispose() { System.out.println("disposing Description " + s); }
+    protected void dispose() {
+        System.out.println("disposing Description " + s);
+    }
 }

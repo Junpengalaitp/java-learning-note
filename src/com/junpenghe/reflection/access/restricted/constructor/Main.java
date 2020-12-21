@@ -16,7 +16,7 @@ public class Main {
         webServer.startServer();
     }
 
-    public static void  initConfig() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static void initConfig() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         Constructor<ServerConfiguration> constructor = ServerConfiguration.class.getDeclaredConstructor(int.class, String.class);
         constructor.setAccessible(true);
         constructor.newInstance(8080, "GoodDay!");

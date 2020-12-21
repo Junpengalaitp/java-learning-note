@@ -24,7 +24,8 @@ class Result {
     }
 }
 
-class Fail extends Result{}
+class Fail extends Result {
+}
 
 interface Algorithm {
     Result algorithm(List<Double> line);

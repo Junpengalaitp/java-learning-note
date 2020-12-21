@@ -6,19 +6,29 @@ import java.lang.reflect.InvocationTargetException;
  * @author Junpeng He
  */
 
-interface HasBatteries {}
-interface Waterproof {}
-interface Shoots {}
+interface HasBatteries {
+}
+
+interface Waterproof {
+}
+
+interface Shoots {
+}
 
 class Toy {
     // 注释下面的无参数构造器会引起 NoSuchMethodError 错误
-    Toy() {}
-    Toy(int i) {}
+    Toy() {
+    }
+
+    Toy(int i) {
+    }
 }
 
 class FancyToy extends Toy
         implements HasBatteries, Waterproof, Shoots {
-    FancyToy() { super(1); }
+    FancyToy() {
+        super(1);
+    }
 }
 
 public class ToyTest {
@@ -30,6 +40,7 @@ public class ToyTest {
         System.out.println(
                 "Canonical name : " + cc.getCanonicalName());
     }
+
     public static void main(String[] args) {
         Class<?> c = FancyToy.class;
 

@@ -17,6 +17,6 @@ public class CallBack {
     }
 
     public static void main(String[] args) {
-        hello("John", null, v -> System.out.println("no last name provided for " +  v));
+        hello("John", null, v -> System.out.println("no last name provided for " + v));
     }
 }

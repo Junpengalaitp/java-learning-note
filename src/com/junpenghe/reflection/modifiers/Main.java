@@ -3,7 +3,6 @@ package com.junpenghe.reflection.modifiers;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Main {
@@ -20,13 +19,16 @@ public class Main {
                 System.out.println("The field is volatile");
             }
             if (Modifier.isFinal(modifier)) {
+                Auction auction = new Auction();
                 System.out.println("The field is final");
+                System.out.println("current class is: " + auction.getAllBids().getClass());
                 field.setAccessible(true);
                 System.out.println("The final field accessible to true");
                 Field modifiersField = Field.class.getDeclaredField("modifiers");
                 modifiersField.setAccessible(true);
                 modifiersField.set(field, field.getModifiers() & ~Modifier.FINAL);
-                field.set(new ArrayList<>(), new CopyOnWriteArrayList<>());
+                field.set(auction, new CopyOnWriteArrayList<>());
+                System.out.println("current class is: " + auction.getAllBids().getClass());
             }
             if (Modifier.isTransient(modifier)) {
                 System.out.println("The field is transient and will not be serialized");
@@ -99,5 +101,8 @@ public class Main {
 
         System.out.println(auction.getAllBids());
         System.out.println("Highest bid : " + auction.getHighestBid().get());
+
     }
+
+
 }

@@ -23,13 +23,14 @@ public class Strategize {
 
     public static void main(String[] args) {
         Strategy[] strategies = {
-        new Strategy() { // [2]
-        @Override
-        public String approach(String msg) {
-            return msg.toUpperCase() + "!";
-        }},
-        msg -> msg.substring(0, 5), // [3]
-        Unrelated::twice // [4]
+                new Strategy() { // [2]
+                    @Override
+                    public String approach(String msg) {
+                        return msg.toUpperCase() + "!";
+                    }
+                },
+                msg -> msg.substring(0, 5), // [3]
+                Unrelated::twice // [4]
         };
         Strategize s = new Strategize("Hello there");
         s.communicate();
@@ -41,7 +42,9 @@ public class Strategize {
     }
 }
 
-interface Strategy { String approach(String msg);}
+interface Strategy {
+    String approach(String msg);
+}
 
 class Soft implements Strategy {
 

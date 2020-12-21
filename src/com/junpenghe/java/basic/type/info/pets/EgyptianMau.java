@@ -8,6 +8,7 @@ public class EgyptianMau extends Cat {
         super(name);
     }
 
-    public EgyptianMau() {super();
+    public EgyptianMau() {
+        super();
     }
 }

@@ -21,9 +21,11 @@ public class MethodReferences {
 
     static class Description {
         String about;
+
         Description(String desc) {
             about = desc;
         }
+
         void help(String msg) {
             System.out.println(about + " " + msg);
         }

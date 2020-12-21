@@ -1,6 +1,6 @@
 package com.junpenghe.java.basic.polymophism.basic;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
     @Override
     public void draw() {
         System.out.println("Circle.draw()");

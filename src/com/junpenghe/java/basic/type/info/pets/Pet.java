@@ -8,5 +8,7 @@ public class Pet extends Individual {
         super(name);
     }
 
-    public Pet() {super();}
+    public Pet() {
+        super();
+    }
 }

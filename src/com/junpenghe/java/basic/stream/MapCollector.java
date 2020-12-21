@@ -39,9 +39,10 @@ class Pair {
 class RandomPair {
     Random rand = new Random(47);
     // An infinite iterator of random capital letters:
-    Iterator<Character> capChars = rand.ints(65,91)
-            .mapToObj(i -> (char)i)
+    Iterator<Character> capChars = rand.ints(65, 91)
+            .mapToObj(i -> (char) i)
             .iterator();
+
     public Stream<Pair> stream() {
         return rand.ints(100, 1000).distinct()
                 .mapToObj(i -> new Pair(capChars.next(), i));

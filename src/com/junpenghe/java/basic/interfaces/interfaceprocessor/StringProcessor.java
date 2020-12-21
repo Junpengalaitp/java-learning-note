@@ -1,7 +1,6 @@
 package com.junpenghe.java.basic.interfaces.interfaceprocessor;
 
 
-
 import java.util.Arrays;
 
 public interface StringProcessor extends Processor {
@@ -21,7 +20,7 @@ class Upcase implements Processor {
     @Override
     // Covariant return:
     public String process(Object input) {
-        return ((String)input).toUpperCase();
+        return ((String) input).toUpperCase();
     }
 }
 

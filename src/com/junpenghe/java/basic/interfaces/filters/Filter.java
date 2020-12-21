@@ -5,5 +5,7 @@ public class Filter {
         return getClass().getSimpleName();
     }
 
-    public Waveform process(Waveform input) { return input; }
+    public Waveform process(Waveform input) {
+        return input;
+    }
 }

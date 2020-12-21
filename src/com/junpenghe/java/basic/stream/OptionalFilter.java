@@ -21,9 +21,9 @@ public class OptionalFilter {
         for (int i = 0; i < elements.length; i++) {
             System.out.println(
                     testStream()
-                    .skip(i)
-                    .findFirst()
-                    .filter(pred)
+                            .skip(i)
+                            .findFirst()
+                            .filter(pred)
             );
         }
     }

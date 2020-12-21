@@ -6,7 +6,8 @@ import java.util.function.Function;
  * @author Junpeng He
  */
 
-interface FuncSS extends Function<String, String> {}
+interface FuncSS extends Function<String, String> {
+}
 
 public class ProduceFunction {
     static FuncSS produce() {

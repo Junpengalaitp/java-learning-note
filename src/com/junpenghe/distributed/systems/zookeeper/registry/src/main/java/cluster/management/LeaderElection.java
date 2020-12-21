@@ -51,8 +51,6 @@ public class LeaderElection implements Watcher {
     }
 
 
-
-
     @Override
     public void process(WatchedEvent event) {
         switch (event.getType()) {

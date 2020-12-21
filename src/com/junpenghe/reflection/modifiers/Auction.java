@@ -3,7 +3,7 @@ package com.junpenghe.reflection.modifiers;
 import java.util.*;
 
 public class Auction {
-    private static final List<Bid> bids = new ArrayList<>();
+    private final List<Bid> bids = new ArrayList<>();
     private transient volatile boolean isAuctionStarted;
 
     public synchronized void addBid(Bid bid) {
@@ -29,4 +29,5 @@ public class Auction {
     public boolean isAuctionRunning() {
         return isAuctionStarted;
     }
+
 }

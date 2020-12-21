@@ -4,7 +4,9 @@ public class Animal extends LivingCreature {
     private Characteristic p = new Characteristic("has heart");
     private Description t = new Description("Animal not Vegetable");
 
-    Animal() { System.out.println("Animal()"); }
+    Animal() {
+        System.out.println("Animal()");
+    }
 
     @Override
     protected void dispose() {

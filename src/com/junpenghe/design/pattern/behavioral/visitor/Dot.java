@@ -8,7 +8,8 @@ public class Dot implements Shape {
     private int x;
     private int y;
 
-    public Dot() {}
+    public Dot() {
+    }
 
     public Dot(int id, int x, int y) {
         this.id = id;

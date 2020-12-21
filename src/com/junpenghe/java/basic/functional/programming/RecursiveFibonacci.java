@@ -8,8 +8,8 @@ public class RecursiveFibonacci {
 
     RecursiveFibonacci() {
         this.fib = n -> n == 0 ? 0 :
-                   n == 1 ? 1 :
-                   fib.call(n - 1) + fib.call(n - 2);
+                n == 1 ? 1 :
+                        fib.call(n - 1) + fib.call(n - 2);
     }
 
     int fibonacci(int n) {

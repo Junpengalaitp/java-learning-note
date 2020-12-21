@@ -4,16 +4,17 @@ import com.junpenghe.java.basic.polymophism.basic.Note;
 
 public class MusicFive {
     static void tune(Instrument i) { // ...
-        i.play(Note.MIDDLE_C); }
+        i.play(Note.MIDDLE_C);
+    }
 
     static void tuneAll(Instrument[] e) {
-        for(Instrument i : e) {
+        for (Instrument i : e) {
             tune(i);
         }
     }
 
     public static void main(String[] args) { // Upcasting during addition to the array:
-        Instrument[] orchestra = {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind() };
+        Instrument[] orchestra = {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
         tuneAll(orchestra);
     }
 }
@@ -21,10 +22,12 @@ public class MusicFive {
 interface Instrument {
     // Compile-time constant:
     int VALUE = 5;
+
     // static & final
     default void play(Note n) { // Automatically public
         System.out.println(this + ".play() " + n);
     }
+
     default void adjust() {
         System.out.println("Adjusting " + this);
     }

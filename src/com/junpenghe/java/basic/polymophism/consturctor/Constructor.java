@@ -5,10 +5,10 @@ package com.junpenghe.java.basic.polymophism.consturctor;
  * Even though constructors are not polymorphic (they’re actually static methods, but the static declaration is implicit),
  * it’s important to understand the way constructors work in complex hierarchies and with polymorphism.
  * This understanding will help you avoid unpleasant entanglements.
- *
+ * <p>
  * A constructor for the base class is always called during the construction process for a derived class.
  * The initialization automatically moves up the inheritance hierarchy so a constructor for every base class is called.
- *
+ * <p>
  * This makes sense because the constructor has a special job: to see that the object is built properly.
  * Since fields are usually private, you must generally assume that a derived class has access to its own members only,
  * and not to those of the base class. Only the base-class constructor has the proper knowledge and access

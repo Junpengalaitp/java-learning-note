@@ -14,7 +14,7 @@ public class Application implements Watcher {
     private static final int DEFAULT_PORT = 8083;
     private ZooKeeper zooKeeper;
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         int currentServerPort = args.length == 1 ? Integer.parseInt(args[0]) : DEFAULT_PORT;
         Application application = new Application();
         ZooKeeper zooKeeper = application.connectToZookeeper();

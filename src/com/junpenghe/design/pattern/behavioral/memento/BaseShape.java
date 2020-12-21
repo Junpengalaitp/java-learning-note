@@ -113,8 +113,7 @@ public abstract class BaseShape implements Shape {
     public void paint(Graphics graphics) {
         if (isSelected()) {
             enableSelectionStyle(graphics);
-        }
-        else {
+        } else {
             disableSelectionStyle(graphics);
         }
 

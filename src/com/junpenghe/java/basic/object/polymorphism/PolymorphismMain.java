@@ -10,7 +10,7 @@ import com.junpenghe.java.basic.object.inheritance.Triangle;
  * methods manipulate generic shapes,unconcerned about whether they’re circles, squares, triangles,
  * or some shape that hasn't even been defined yet. All shapes can be drawn, erased, and moved,
  * so these methods send a message to a shape object without worrying how the object copes with the message.
- *
+ * <p>
  * Such code is unaffected by the addition of new types, and adding new types is a common way to extend an
  * object-oriented program to handle new situations. For example, you can derive a new subtype of shape called
  * "pentagon" without modifying methods that deal only with generic shapes. This ability to easily extend a design by
@@ -49,19 +49,19 @@ public class PolymorphismMain {
      * The compiler and runtime system handle the details; all you must know is it happens, and more importantly,
      * how to design with it. When you send a message to an object, the object will do the right thing,
      * even when upcasting is involved.
-     *
+     * <p>
      * 我们可以看到程序并未这样表达：“如果你是一个 Circle ，就这样做；如果你是一个 Square，就那样做...”。若那样编写代码，
      * 就需检查 Shape 所有可能的类型，如圆、矩形等等。这显然是非常麻烦的，而且每次添加了一种新的 Shape 类型后，都要相应地进行修改。
      * 在这里，我们只需说：“你是一种几何形状，我知道你能删掉 erase() 和绘制 draw()，你自己去做吧，注意细节。”
-     *
+     * <p>
      * 尽管我们没作出任何特殊指示，程序的操作也是完全正确和恰当的。我们知道，为 Circle 调用draw()
      * 时执行的代码与为一个 Square 或 Line 调用 draw() 时执行的代码是不同的。但在将 draw()
      * 信息发给一个匿名 Shape 时，根据 Shape 句柄当时连接的实际类型，会相应地采取正确的操作。这非常神奇，
      * 因为当 Java 编译器为 doSomething() 编译代码时，它并不知道自己要操作的准确类型是什么。
-     *
+     * <p>
      * 尽管我们确实可以保证最终会为 Shape 调用 erase() 和 draw()，但并不能确定特定的 Circle，
      * Square 或者 Line 调用什么。最后，程序执行的操作却依然是正确的，这是怎么做到的呢？
-     *
+     * <p>
      * 发送消息给对象时，如果程序不知道接收的具体类型是什么，但最终执行是正确的，这就是对象的“多态性”（Polymorphism）。
      * 面向对象的程序设计语言是通过“动态绑定”的方式来实现对象的多态性的。编译器和运行时系统会负责对所有细节的控制；我们只需知道要做什么，
      * 以及如何利用多态性来更好地设计程序。

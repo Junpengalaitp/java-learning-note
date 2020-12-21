@@ -8,5 +8,7 @@ public class Rodent extends Pet {
         super(name);
     }
 
-    public Rodent() {super();}
+    public Rodent() {
+        super();
+    }
 }

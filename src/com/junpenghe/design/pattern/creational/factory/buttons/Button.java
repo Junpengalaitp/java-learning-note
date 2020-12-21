@@ -5,5 +5,6 @@ package com.junpenghe.design.pattern.creational.factory.buttons;
  */
 public interface Button {
     void render();
+
     void onClick();
 }

@@ -24,5 +24,7 @@ class Crack implements Operations {
 
 class Twist implements Operations {
     @Override
-    public void execute() { Operations.show("Twist"); }
+    public void execute() {
+        Operations.show("Twist");
+    }
 }
