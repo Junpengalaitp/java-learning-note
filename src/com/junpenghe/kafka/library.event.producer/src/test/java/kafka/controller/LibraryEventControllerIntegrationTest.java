@@ -38,11 +38,11 @@ public class LibraryEventControllerIntegrationTest {
     EmbeddedKafkaBroker embeddedKafkaBroker;
 
 
-    private Consumer<Integer,String> consumer;
+    private Consumer<Integer, String> consumer;
 
     @BeforeEach
     void setUp() {
-        Map<String,Object> configs = new HashMap<>(KafkaTestUtils.consumerProps("group1", "true", embeddedKafkaBroker));
+        Map<String, Object> configs = new HashMap<>(KafkaTestUtils.consumerProps("group1", "true", embeddedKafkaBroker));
         consumer = new DefaultKafkaConsumerFactory<>(configs, new IntegerDeserializer(), new StringDeserializer()).createConsumer();
         embeddedKafkaBroker.consumeFromAllEmbeddedTopics(consumer);
     }
@@ -76,8 +76,8 @@ public class LibraryEventControllerIntegrationTest {
         //then
         assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
 
-        ConsumerRecord<Integer, String> consumerRecord =  KafkaTestUtils.getSingleRecord(consumer,"library-events");
-        String expectedRecord ="{\"libraryEventId\":null,\"book\":{\"bookId\":123,\"bookName\":\"Kafka using Spring Boot\",\"bookAuthor\":\"Dilip\"},\"libraryEventType\":\"NEW\"}";
+        ConsumerRecord<Integer, String> consumerRecord = KafkaTestUtils.getSingleRecord(consumer, "library-events");
+        String expectedRecord = "{\"libraryEventId\":null,\"book\":{\"bookId\":123,\"bookName\":\"Kafka using Spring Boot\",\"bookAuthor\":\"Dilip\"},\"libraryEventType\":\"NEW\"}";
         String value = consumerRecord.value();
         assertEquals(expectedRecord, value);
 

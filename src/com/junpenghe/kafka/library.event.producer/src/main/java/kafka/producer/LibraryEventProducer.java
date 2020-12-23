@@ -50,13 +50,13 @@ public class LibraryEventProducer {
         });
     }
 
-    public void sendLibraryEventAlternative(LibraryEvent libraryEvent) throws JsonProcessingException {
+    public ListenableFuture<SendResult<Integer, String>> sendLibraryEventAlternative(LibraryEvent libraryEvent) throws JsonProcessingException {
         Integer key = libraryEvent.getLibraryEventId();
         String value = objectMapper.writeValueAsString(libraryEvent);
 
         ProducerRecord<Integer, String> producerRecord = buildProducerRecord(key, value, topic);
 
-        ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(topic, key, value);
+        ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(producerRecord);
         listenableFuture.addCallback(new ListenableFutureCallback<>() {
             @Override
             public void onFailure(Throwable throwable) {
@@ -68,6 +68,8 @@ public class LibraryEventProducer {
                 handleSuccess(key, value, result);
             }
         });
+
+        return listenableFuture;
     }
 
     private ProducerRecord<Integer, String> buildProducerRecord(Integer key, String value, String topic) {
@@ -82,7 +84,7 @@ public class LibraryEventProducer {
         SendResult<Integer, String> sendResult = null;
         try {
             sendResult = kafkaTemplate.sendDefault(key, value)
-                .get(1, TimeUnit.SECONDS);
+                    .get(1, TimeUnit.SECONDS);
         } catch (InterruptedException | ExecutionException e) {
             log.error("InterruptedException | ExecutionException Sending the Message and the exception is {}", e.getMessage());
             e.printStackTrace();
