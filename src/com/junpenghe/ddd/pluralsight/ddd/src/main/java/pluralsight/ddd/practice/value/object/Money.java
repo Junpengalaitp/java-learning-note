@@ -54,4 +54,20 @@ public class Money {
                 .twentyDollarCount(money.twentyDollarCount + moneyToAdd.twentyDollarCount)
                 .build();
     }
+
+    public static Money subtractAndGet(Money money, Money moneyToAdd) {
+        return Money.builder()
+                .oneCentCount(money.oneCentCount - moneyToAdd.oneCentCount)
+                .tenCentCount(money.tenCentCount - moneyToAdd.tenCentCount)
+                .quarterCount(money.quarterCount - moneyToAdd.quarterCount)
+                .oneDollarCount(money.oneDollarCount - moneyToAdd.oneDollarCount)
+                .fiveDollarCount(money.fiveDollarCount - moneyToAdd.fiveDollarCount)
+                .twentyDollarCount(money.twentyDollarCount - moneyToAdd.twentyDollarCount)
+                .build();
+    }
+
+    public double amount() {
+        return oneCentCount * 0.01 + tenCentCount * 0.1 + quarterCount * 0.25 + oneDollarCount + fiveDollarCount * 5
+                + twentyDollarCount * 20;
+    }
 }
