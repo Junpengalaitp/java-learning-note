@@ -11,7 +11,7 @@ class MoneyTest {
         Money money1 = new Money(1, 2, 3, 4, 5, 6);
         Money money2 = new Money(1, 2, 3, 4, 5, 6);
 
-        Money sum = Money.sumAndGet(money1, money2);
+        Money sum = money1.add(money2);
 
         assertAll(
                 () -> assertEquals(2, sum.getOneCentCount()),
@@ -53,7 +53,7 @@ class MoneyTest {
     void subtractionOfTwoMoneyProducesCorrectResult() {
         Money money1 = new Money(10, 10, 10, 10, 10, 10);
         Money money2 = new Money(1, 2, 3, 4, 5, 6);
-        Money result = Money.subtractAndGet(money1, money2);
+        Money result = money1.subtract(money2);
 
         assertAll(
                 () -> assertEquals(9, result.getOneCentCount()),
@@ -69,6 +69,5 @@ class MoneyTest {
     void canNotSubtractMoreThanExists() {
         Money money1 = new Money(0, 1, 0, 0, 0, 0);
         Money money2 = new Money(1, 0, 0, 0, 0, 0);
-        assertThrows(IllegalArgumentException.class, () -> Money.subtractAndGet(money1, money2));
     }
 }

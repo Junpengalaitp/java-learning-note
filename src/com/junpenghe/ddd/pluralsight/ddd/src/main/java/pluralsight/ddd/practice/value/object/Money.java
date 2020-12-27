@@ -16,6 +16,14 @@ public class Money {
     int fiveDollarCount;
     int twentyDollarCount;
 
+    public static final Money NONE = new Money(0, 0, 0, 0, 0, 0);
+    public static final Money CENT = new Money(1, 0, 0, 0, 0, 0);
+    public static final Money TENCENT = new Money(0, 1, 0, 0, 0, 0);
+    public static final Money QUARTER = new Money(0, 0, 1, 0, 0, 0);
+    public static final Money DOLLAR = new Money(0, 0, 0, 1, 0, 0);
+    public static final Money FIVE_DOLLAR = new Money(0, 0, 0, 0, 1, 0);
+    public static final Money TWENTY_DOLLAR = new Money(0, 0, 0, 0, 0, 1);
+
     public Money(int oneCentCount, int tenCentCount, int quarterCount, int oneDollarCount, int fiveDollarCount, int twentyDollarCount) {
         if (oneCentCount < 0) {
             throw new IllegalArgumentException();
@@ -44,25 +52,25 @@ public class Money {
         this.twentyDollarCount = twentyDollarCount;
     }
 
-    public static Money sumAndGet(Money money, Money moneyToAdd) {
+    public Money add(Money moneyToAdd) {
         return Money.builder()
-                .oneCentCount(money.oneCentCount + moneyToAdd.oneCentCount)
-                .tenCentCount(money.tenCentCount + moneyToAdd.tenCentCount)
-                .quarterCount(money.quarterCount + moneyToAdd.quarterCount)
-                .oneDollarCount(money.oneDollarCount + moneyToAdd.oneDollarCount)
-                .fiveDollarCount(money.fiveDollarCount + moneyToAdd.fiveDollarCount)
-                .twentyDollarCount(money.twentyDollarCount + moneyToAdd.twentyDollarCount)
+                .oneCentCount(this.oneCentCount + moneyToAdd.oneCentCount)
+                .tenCentCount(this.tenCentCount + moneyToAdd.tenCentCount)
+                .quarterCount(this.quarterCount + moneyToAdd.quarterCount)
+                .oneDollarCount(this.oneDollarCount + moneyToAdd.oneDollarCount)
+                .fiveDollarCount(this.fiveDollarCount + moneyToAdd.fiveDollarCount)
+                .twentyDollarCount(this.twentyDollarCount + moneyToAdd.twentyDollarCount)
                 .build();
     }
 
-    public static Money subtractAndGet(Money money, Money moneyToAdd) {
+    public Money subtract(Money moneyToSubtract) {
         return Money.builder()
-                .oneCentCount(money.oneCentCount - moneyToAdd.oneCentCount)
-                .tenCentCount(money.tenCentCount - moneyToAdd.tenCentCount)
-                .quarterCount(money.quarterCount - moneyToAdd.quarterCount)
-                .oneDollarCount(money.oneDollarCount - moneyToAdd.oneDollarCount)
-                .fiveDollarCount(money.fiveDollarCount - moneyToAdd.fiveDollarCount)
-                .twentyDollarCount(money.twentyDollarCount - moneyToAdd.twentyDollarCount)
+                .oneCentCount(this.oneCentCount - moneyToSubtract.oneCentCount)
+                .tenCentCount(this.tenCentCount - moneyToSubtract.tenCentCount)
+                .quarterCount(this.quarterCount - moneyToSubtract.quarterCount)
+                .oneDollarCount(this.oneDollarCount - moneyToSubtract.oneDollarCount)
+                .fiveDollarCount(this.fiveDollarCount - moneyToSubtract.fiveDollarCount)
+                .twentyDollarCount(this.twentyDollarCount - moneyToSubtract.twentyDollarCount)
                 .build();
     }
 

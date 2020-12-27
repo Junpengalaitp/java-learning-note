@@ -1,24 +1,39 @@
 package pluralsight.ddd.practice.entity;
 
+import lombok.Getter;
 import pluralsight.ddd.practice.value.object.Money;
 
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
+
+@Getter
 public class SnackMachine extends Entity {
     private Money moneyInside;
     private Money moneyInTransaction;
 
-    public SnackMachine(long id) {
-        super(id);
+    private static final Set<Money> ACCEPT_COINS_AND_NOTES = Stream.of(Money.CENT, Money.TENCENT, Money.QUARTER,
+            Money.DOLLAR, Money.FIVE_DOLLAR, Money.TWENTY_DOLLAR).collect(Collectors.toSet());
+
+    public SnackMachine() {
+        this.moneyInside = Money.NONE;
+        this.moneyInTransaction = Money.NONE;
     }
 
     public void insertMoney (Money money) {
-        moneyInTransaction = Money.sumAndGet(moneyInTransaction, money);
+        if (!ACCEPT_COINS_AND_NOTES.contains(money)) {
+            throw new IllegalArgumentException();
+        }
+        moneyInTransaction = moneyInTransaction.add(money);
     }
 
     public void returnMoney() {
+        moneyInTransaction = Money.NONE;
     }
 
     public void buySnack() {
-        moneyInside = Money.sumAndGet(moneyInside, moneyInTransaction);
+        moneyInside = moneyInside.add(moneyInTransaction);
+        moneyInTransaction = Money.NONE;
     }
 }
