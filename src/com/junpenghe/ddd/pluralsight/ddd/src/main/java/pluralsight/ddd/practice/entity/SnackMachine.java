@@ -1,6 +1,7 @@
 package pluralsight.ddd.practice.entity;
 
 import lombok.Getter;
+import pluralsight.ddd.practice.model.SnackMachineModel;
 import pluralsight.ddd.practice.value.object.Money;
 
 import java.util.Set;
@@ -17,6 +18,7 @@ public class SnackMachine extends Entity {
             Money.DOLLAR, Money.FIVE_DOLLAR, Money.TWENTY_DOLLAR).collect(Collectors.toSet());
 
     public SnackMachine() {
+        super();
         this.moneyInside = Money.NONE;
         this.moneyInTransaction = Money.NONE;
     }
@@ -35,5 +37,17 @@ public class SnackMachine extends Entity {
     public void buySnack() {
         moneyInside = moneyInside.add(moneyInTransaction);
         moneyInTransaction = Money.NONE;
+    }
+
+    public SnackMachineModel snackMachineModel() {
+        return SnackMachineModel.builder()
+                .id(id)
+                .oneCentCount(moneyInside.getOneCentCount())
+                .tenCentCount(moneyInside.getTenCentCount())
+                .quarterCount(moneyInside.getQuarterCount())
+                .oneDollarCount(moneyInside.getOneDollarCount())
+                .fiveDollarCount(moneyInside.getFiveDollarCount())
+                .twentyDollarCount(moneyInside.getTwentyDollarCount())
+                .build();
     }
 }

@@ -1,0 +1,8 @@
+server:
+  port: 28080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/alaitp
+    username: "hejunpeng"
+    password: "921102"

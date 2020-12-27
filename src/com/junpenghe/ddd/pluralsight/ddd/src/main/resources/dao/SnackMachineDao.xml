@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pluralsight.ddd.practice.dao.SnackMachineDao">
+  <resultMap id="BaseResultMap" type="pluralsight.ddd.practice.model.SnackMachineModel">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="one_cent_count" jdbcType="INTEGER" property="oneCentCount" />
+    <result column="ten_cent_count" jdbcType="INTEGER" property="tenCentCount" />
+    <result column="quarter_count" jdbcType="INTEGER" property="quarterCount" />
+    <result column="one_dollar_count" jdbcType="INTEGER" property="oneDollarCount" />
+    <result column="five_dollar_count" jdbcType="INTEGER" property="fiveDollarCount" />
+    <result column="twenty_dollar_count" jdbcType="INTEGER" property="twentyDollarCount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, one_cent_count, ten_cent_count, quarter_count, one_dollar_count, five_dollar_count, 
+    twenty_dollar_count
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from "snack_machine"
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from "snack_machine"
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="pluralsight.ddd.practice.model.SnackMachineModel" useGeneratedKeys="true">
+    insert into "snack_machine" (one_cent_count, ten_cent_count, quarter_count, 
+      one_dollar_count, five_dollar_count, twenty_dollar_count
+      )
+    values (#{oneCentCount,jdbcType=INTEGER}, #{tenCentCount,jdbcType=INTEGER}, #{quarterCount,jdbcType=INTEGER}, 
+      #{oneDollarCount,jdbcType=INTEGER}, #{fiveDollarCount,jdbcType=INTEGER}, #{twentyDollarCount,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="pluralsight.ddd.practice.model.SnackMachineModel" useGeneratedKeys="true">
+    insert into "snack_machine"
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oneCentCount != null">
+        one_cent_count,
+      </if>
+      <if test="tenCentCount != null">
+        ten_cent_count,
+      </if>
+      <if test="quarterCount != null">
+        quarter_count,
+      </if>
+      <if test="oneDollarCount != null">
+        one_dollar_count,
+      </if>
+      <if test="fiveDollarCount != null">
+        five_dollar_count,
+      </if>
+      <if test="twentyDollarCount != null">
+        twenty_dollar_count,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oneCentCount != null">
+        #{oneCentCount,jdbcType=INTEGER},
+      </if>
+      <if test="tenCentCount != null">
+        #{tenCentCount,jdbcType=INTEGER},
+      </if>
+      <if test="quarterCount != null">
+        #{quarterCount,jdbcType=INTEGER},
+      </if>
+      <if test="oneDollarCount != null">
+        #{oneDollarCount,jdbcType=INTEGER},
+      </if>
+      <if test="fiveDollarCount != null">
+        #{fiveDollarCount,jdbcType=INTEGER},
+      </if>
+      <if test="twentyDollarCount != null">
+        #{twentyDollarCount,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="pluralsight.ddd.practice.model.SnackMachineModel">
+    update "snack_machine"
+    <set>
+      <if test="oneCentCount != null">
+        one_cent_count = #{oneCentCount,jdbcType=INTEGER},
+      </if>
+      <if test="tenCentCount != null">
+        ten_cent_count = #{tenCentCount,jdbcType=INTEGER},
+      </if>
+      <if test="quarterCount != null">
+        quarter_count = #{quarterCount,jdbcType=INTEGER},
+      </if>
+      <if test="oneDollarCount != null">
+        one_dollar_count = #{oneDollarCount,jdbcType=INTEGER},
+      </if>
+      <if test="fiveDollarCount != null">
+        five_dollar_count = #{fiveDollarCount,jdbcType=INTEGER},
+      </if>
+      <if test="twentyDollarCount != null">
+        twenty_dollar_count = #{twentyDollarCount,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="pluralsight.ddd.practice.model.SnackMachineModel">
+    update "snack_machine"
+    set one_cent_count = #{oneCentCount,jdbcType=INTEGER},
+      ten_cent_count = #{tenCentCount,jdbcType=INTEGER},
+      quarter_count = #{quarterCount,jdbcType=INTEGER},
+      one_dollar_count = #{oneDollarCount,jdbcType=INTEGER},
+      five_dollar_count = #{fiveDollarCount,jdbcType=INTEGER},
+      twenty_dollar_count = #{twentyDollarCount,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

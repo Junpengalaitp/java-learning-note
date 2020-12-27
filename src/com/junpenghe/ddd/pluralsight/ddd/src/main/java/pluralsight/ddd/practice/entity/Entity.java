@@ -1,6 +1,12 @@
 package pluralsight.ddd.practice.entity;
 
 
+import java.util.UUID;
+
 public abstract class Entity {
-    private long id;
+    protected final String id;
+
+    protected Entity() {
+        this.id = UUID.randomUUID().toString();
+    }
 }
