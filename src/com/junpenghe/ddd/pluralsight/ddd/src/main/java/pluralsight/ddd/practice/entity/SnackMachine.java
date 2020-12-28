@@ -1,6 +1,7 @@
 package pluralsight.ddd.practice.entity;
 
 import lombok.Getter;
+import pluralsight.ddd.practice.aggregate.AggregateRoot;
 import pluralsight.ddd.practice.model.SnackMachineModel;
 import pluralsight.ddd.practice.value.object.Money;
 
@@ -10,7 +11,7 @@ import java.util.stream.Stream;
 
 
 @Getter
-public class SnackMachine extends Entity {
+public class SnackMachine extends AggregateRoot {
     private Money moneyInside;
     private Money moneyInTransaction;
 
@@ -41,7 +42,7 @@ public class SnackMachine extends Entity {
 
     public SnackMachineModel snackMachineModel() {
         return SnackMachineModel.builder()
-                .id(id)
+//                .id(id)
                 .oneCentCount(moneyInside.getOneCentCount())
                 .tenCentCount(moneyInside.getTenCentCount())
                 .quarterCount(moneyInside.getQuarterCount())
