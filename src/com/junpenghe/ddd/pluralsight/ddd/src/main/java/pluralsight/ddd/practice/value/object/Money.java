@@ -4,6 +4,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Value;
 
+import java.math.BigDecimal;
+
 
 @Value
 @Getter
@@ -77,5 +79,26 @@ public class Money {
     public double amount() {
         return oneCentCount * 0.01 + tenCentCount * 0.1 + quarterCount * 0.25 + oneDollarCount + fiveDollarCount * 5
                 + twentyDollarCount * 20;
+    }
+
+    public Money allocate(BigDecimal amount) {
+        int twentyDollarCount = Math.min(amount.divide(BigDecimal.valueOf(20)).intValue(), this.twentyDollarCount);
+        amount = amount.subtract(BigDecimal.valueOf(twentyDollarCount * 20L));
+
+        int fiveDollarCount = Math.min(amount.divide(BigDecimal.valueOf(5)).intValue(), this.fiveDollarCount);
+        amount = amount.subtract(BigDecimal.valueOf(fiveDollarCount * 5L));
+
+        int oneDollarCount = Math.min(amount.intValue(), this.oneDollarCount);
+        amount = amount.subtract(BigDecimal.valueOf(oneDollarCount));
+
+        int quarterCount = Math.min(amount.divide(BigDecimal.valueOf(0.25)).intValue(), this.quarterCount);
+        amount = amount.subtract(BigDecimal.valueOf(quarterCount * 0.25));
+
+        int tenCentCount = Math.min(amount.divide(BigDecimal.valueOf(0.1)).intValue(), this.tenCentCount);
+        amount = amount.subtract(BigDecimal.valueOf(tenCentCount * 0.1));
+
+        int oneCentCount = Math.min(amount.divide(BigDecimal.valueOf(0.01)).intValue(), this.oneCentCount);
+
+        return new Money(oneCentCount, tenCentCount, quarterCount, oneDollarCount, fiveDollarCount, twentyDollarCount);
     }
 }
