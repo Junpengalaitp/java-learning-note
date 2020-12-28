@@ -2,6 +2,7 @@ package pluralsight.ddd.practice.entity;
 
 import org.junit.jupiter.api.Test;
 import pluralsight.ddd.practice.value.object.Money;
+import pluralsight.ddd.practice.value.object.SnackPile;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -37,9 +38,20 @@ class SnackMachineTest {
         snackMachine.insertMoney(Money.DOLLAR);
         snackMachine.insertMoney(Money.DOLLAR);
 
-        snackMachine.buySnack();
+        snackMachine.buySnack(1);
 
         assertEquals(Money.NONE, snackMachine.getMoneyInTransaction());
         assertEquals(2.0, snackMachine.getMoneyInside().amount());
+    }
+
+    @Test
+    void buySnackTradesInsertedMoneyForASnack() {
+        var snackMachine = new SnackMachine();
+        snackMachine.loadSnacks(1, new SnackPile(new Snack("Some snack"), 10, 1.0));
+        snackMachine.insertMoney(Money.DOLLAR);
+        snackMachine.buySnack(1);
+        assertEquals(Money.NONE, snackMachine.getMoneyInTransaction());
+        assertEquals(1, snackMachine.getMoneyInside().amount());
+        assertEquals(9, snackMachine.getSnackPileByPosition(1).getQuantity());
     }
 }
