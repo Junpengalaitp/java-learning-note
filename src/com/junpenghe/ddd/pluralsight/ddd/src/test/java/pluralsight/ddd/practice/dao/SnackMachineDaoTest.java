@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.transaction.annotation.Transactional;
 import pluralsight.ddd.practice.entity.SnackMachine;
-import pluralsight.ddd.practice.model.SnackMachineModel;
+import pluralsight.ddd.practice.mapping.SnackMachineMapping;
 import pluralsight.ddd.practice.value.object.Money;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,14 +24,14 @@ class SnackMachineDaoTest {
     void testInsertOne() {
         SnackMachine snackMachine = new SnackMachine();
         snackMachine.insertMoney(Money.DOLLAR);
-        int res = snackMachineDao.insert(snackMachine.snackMachineModel());
+        int res = snackMachineDao.insert(new SnackMachineMapping(snackMachine));
         assertEquals(1, res);
     }
 
     @Test
     void testSelectOne() {
         String id = "91090148-2892-48bf-a59e-159ddb28b551";
-        SnackMachineModel snackMachine = snackMachineDao.selectById(id);
-        assertEquals(id, snackMachine.getId());
+        SnackMachineMapping machineMapping = snackMachineDao.selectById(id);
+        assertEquals(id, machineMapping.getId());
     }
 }

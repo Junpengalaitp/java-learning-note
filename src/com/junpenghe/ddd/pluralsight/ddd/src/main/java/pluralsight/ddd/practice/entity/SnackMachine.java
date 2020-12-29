@@ -3,7 +3,6 @@ package pluralsight.ddd.practice.entity;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import pluralsight.ddd.practice.aggregate.AggregateRoot;
-import pluralsight.ddd.practice.model.SnackMachineModel;
 import pluralsight.ddd.practice.value.object.Money;
 import pluralsight.ddd.practice.value.object.SnackPile;
 
@@ -66,18 +65,6 @@ public class SnackMachine extends AggregateRoot {
         moneyInside = moneyInside.subtract(change);
 
         moneyInTransaction = BigDecimal.ZERO;
-    }
-
-    public SnackMachineModel snackMachineModel() {
-        return SnackMachineModel.builder()
-//                .id(id)
-                .oneCentCount(moneyInside.getOneCentCount())
-                .tenCentCount(moneyInside.getTenCentCount())
-                .quarterCount(moneyInside.getQuarterCount())
-                .oneDollarCount(moneyInside.getOneDollarCount())
-                .fiveDollarCount(moneyInside.getFiveDollarCount())
-                .twentyDollarCount(moneyInside.getTwentyDollarCount())
-                .build();
     }
 
     public void loadSnacks(int position, SnackPile snackPile) {

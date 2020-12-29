@@ -3,8 +3,7 @@ package pluralsight.ddd.practice.aggregate;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.UUID;
 
 /**
  * @author Junpeng He
@@ -18,4 +17,9 @@ public class AggregateRoot {
 //    public AggregateRoot(int version) {
 //        this.version = version;
 //    }
+    protected final String id;
+
+    public AggregateRoot() {
+        this.id = UUID.randomUUID().toString();
+    }
 }
