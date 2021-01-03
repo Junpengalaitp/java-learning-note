@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import pluralsight.ddd.practice.aggregate.AggregateRoot;
+import pluralsight.ddd.practice.event.BalanceChangedEvent;
 import pluralsight.ddd.practice.value.object.Money;
 
 import java.math.BigDecimal;
@@ -31,6 +32,8 @@ public class Atm extends AggregateRoot {
         moneyInside = moneyInside.subtract(output);
         BigDecimal amountWithCommission = calculateAmountWithCommission(amount);
         moneyCharged = moneyCharged.add(amountWithCommission);
+
+        addDomainEvent(new BalanceChangedEvent(amountWithCommission));
     }
 
     public void loadMoney(Money money) {

@@ -2,7 +2,10 @@ package pluralsight.ddd.practice.aggregate;
 
 import lombok.Getter;
 import lombok.Setter;
+import pluralsight.ddd.practice.event.DomainEvent;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -11,15 +14,18 @@ import java.util.UUID;
 @Setter
 @Getter
 public class AggregateRoot {
-//    private final int version;
-//    private final List<?> events = new ArrayList<>();
-//
-//    public AggregateRoot(int version) {
-//        this.version = version;
-//    }
     protected final String id;
+    private final List<DomainEvent> domainEvents = new ArrayList<>();
 
     public AggregateRoot() {
         this.id = UUID.randomUUID().toString();
+    }
+
+    protected void addDomainEvent(DomainEvent domainEvent) {
+        domainEvents.add(domainEvent);
+    }
+
+    public void clearEvents() {
+        domainEvents.clear();
     }
 }
