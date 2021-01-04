@@ -6,3 +6,4 @@
 /src/com/junpenghe/distributed/systems/zookeeper/registry/target/classes/
 /out/
 /src/com/junpenghe/distributed/systems/network/comunication/http-server/http-server.iml
+/src/com/junpenghe/concurrency/concurrency.iml
