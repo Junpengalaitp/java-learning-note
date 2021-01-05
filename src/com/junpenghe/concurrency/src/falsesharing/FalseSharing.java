@@ -1,7 +1,17 @@
-package producer.consumer.wait.notify;
+package falsesharing;
 
+/*
+ * 在Setting - Build,Execution,Deployment - Compiler - Java Compiler - Override compiler parameters per-module中增加如下设置：
+ *
+ * -parameters
+ * --add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+ * --add-exports=java.base/sun.net=ALL-UNNAMED
+ * --add-exports=java.base/sun.net.util=ALL-UNNAMED
+ * --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
+ * --add-exports=java.base/sun.net.www=ALL-UNNAMED
+ */
+import jdk.internal.vm.annotation.Contended;
 
-import sun.misc.Contended;
 
 public class FalseSharing {
     public static final int NUM_THREADS_MAX = 6;
