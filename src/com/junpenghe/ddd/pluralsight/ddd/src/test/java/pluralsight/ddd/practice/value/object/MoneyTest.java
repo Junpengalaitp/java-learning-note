@@ -20,7 +20,7 @@ class MoneyTest {
                 () -> assertEquals(8, sum.getOneDollarCount()),
                 () -> assertEquals(10, sum.getFiveDollarCount()),
                 () -> assertEquals(12, sum.getTwentyDollarCount())
-                );
+        );
     }
 
     @Test

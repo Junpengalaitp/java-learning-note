@@ -89,7 +89,7 @@ class SnackMachineTest {
     void afterPurchaseChangeIsReturned() {
         var snackMachine = new SnackMachine();
         snackMachine.loadSnacks(1, new SnackPile(new Snack("Some snack"), 10, 0.5));
-        snackMachine.loadMoney(new Money(0,10, 0, 0, 0, 0));
+        snackMachine.loadMoney(new Money(0, 10, 0, 0, 0, 0));
 
         snackMachine.insertMoney(Money.DOLLAR);
         snackMachine.buySnack(1);

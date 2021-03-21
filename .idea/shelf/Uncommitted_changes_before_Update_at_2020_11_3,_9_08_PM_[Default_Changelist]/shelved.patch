@@ -1,0 +1,20 @@
+Index: src/com/junpenghe/solid/lsp/PriceUtils.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.junpenghe.solid.lsp;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class PriceUtils {\n\n\n\n    public static void main(String[] args) {\n        Product p1 = new Product();\n        Product p2 = new Product();\n        Product p3 = new InHouseProduct();\n\n        List<Product> productList = new ArrayList<>();\n\n        productList.add(p1);\n        productList.add(p2);\n        productList.add(p3);\n\n        for (Product product : productList) {\n            System.out.println(product.getDiscount());\n        }\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/com/junpenghe/solid/lsp/PriceUtils.java	(revision d569291c92ad901b0ce2e8cb51e0d7353af7a6a4)
++++ src/com/junpenghe/solid/lsp/PriceUtils.java	(date 1604408869291)
+@@ -4,9 +4,7 @@
+ import java.util.List;
+ 
+ public class PriceUtils {
+-
+-
+-
++    
+     public static void main(String[] args) {
+         Product p1 = new Product();
+         Product p2 = new Product();

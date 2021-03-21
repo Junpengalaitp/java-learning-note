@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class LibraryEventsConsumerApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		SpringApplication.run(LibraryEventsConsumerApplication.class, args);
-	}
+        SpringApplication.run(LibraryEventsConsumerApplication.class, args);
+    }
 
 }

@@ -30,10 +30,10 @@ public class SnackMachine extends AggregateRoot {
                 new Slot(this, 1),
                 new Slot(this, 2),
                 new Slot(this, 3)
-                );
+        );
     }
 
-    public void insertMoney (Money money) {
+    public void insertMoney(Money money) {
         if (!ACCEPT_COINS_AND_NOTES.contains(money)) {
             throw new IllegalArgumentException();
         }

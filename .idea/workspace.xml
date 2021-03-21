@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/Interview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/AQSExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/LockSupportExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/UnReentrantLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/UnReentrantLockProducerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/entity/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/data/structure/b/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/data/structure/b/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/entity/SnackMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/entity/SnackMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/entity/SnackMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/entity/SnackMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/value/object/MoneyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/value/object/MoneyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/MacOSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/MacOSButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/LibraryEventsConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/LibraryEventsConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="default" />
+  </component>
+  <component name="ProjectId" id="1jETiEBLSo9UYJwnfBgX6GzedPf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/registry/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36666667" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pluralsight.ddd.practice.event" />
+      <recent name="com.junpenghe.reflection.api.test.api" />
+      <recent name="cluster.management" />
+      <recent name="com.junpenghe.solid.isp.before" />
+      <recent name="com.junpenghe.java.basic.polymophism.better.switchs.good" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/registry/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/watcher/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/leader/election/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/solid/isp/after" />
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/solid/ocp/after" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/resources/dao" />
+      <recent name="$PROJECT_DIR$/src/com/junpenghe" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pluralsight.ddd.practice.snackmachine.value" />
+      <recent name="pluralsight.ddd.practice.snackmachine" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pluralsight.ddd.practice.atm" />
+      <recent name="pluralsight.ddd.practice.dao" />
+      <recent name="pluralsight.ddd.practice.entity" />
+      <recent name="pluralsight.ddd.practice.value.object" />
+      <recent name="kafka.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.junpenghe.solid.srp.coupling.after" />
+      <recent name="com.junpenghe.solid.srp.cohesion.after" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8008/v1/libraryevent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{&quot;libraryEventId&quot;" />
+                <option name="value" value="null,&quot;book&quot;:{&quot;bookId&quot;:456,&quot;bookName&quot;:&quot;Kafka Using Spring Boot&quot;,&quot;bookAuthor&quot;:&quot;Dilip&quot;}}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8008/v1/libraryevent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{&quot;libraryEventId&quot;" />
+                <option name="value" value="null,&quot;book&quot;:{&quot;bookId&quot;:456,&quot;bookName&quot;:&quot;Kafka Using Spring Boot&quot;,&quot;bookAuthor&quot;:&quot;Dilip&quot;}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8008/v1/library" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{&quot;libraryEventId&quot;" />
+                <option name="value" value="null,&quot;book&quot;:{&quot;bookId&quot;:456,&quot;bookName&quot;:&quot;Kafka Using Spring Boot&quot;,&quot;bookAuthor&quot;:&quot;Dilip&quot;}}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8008/v1/library" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/v1/library" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SpringBootDemoApplicationTests">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.design.pattern.creational.abstractfactory.Demo" />
+      <module name="java-learning-note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.design.pattern.creational.abstractfactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Interview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.Interview" />
+      <module name="java-learning-note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LockSupportExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lock.LockSupportExp" />
+      <module name="concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MIterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.MIterview" />
+      <module name="java-learning-note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.spring.spring.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junpenghe.spring.spring.data" />
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.spring.spring.data.SpringBootDemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ddd-in-practice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pluralsight.ddd.practice.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryEventProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="kafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kafka.LibraryEventProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryEventsConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="library-event-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kafka.library.event.consumer.LibraryEventsConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ddd-in-practice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pluralsight.ddd.practice.DDDPracticeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.junpenghe.spring.spring.data.SpringBootDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.LockSupportExp" />
+      <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.Interview" />
+      <item itemvalue="Application.MIterview" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
+      <item itemvalue="Spring Boot.LibraryEventsConsumerApplication" />
+      <item itemvalue="Spring Boot.PracticeApplication" />
+      <item itemvalue="Spring Boot.SpringDataApplication" />
+      <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
+        <item itemvalue="Application.MIterview" />
+        <item itemvalue="Application.Interview" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.LockSupportExp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="" />
+      <created>1603368375852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603368375852</updated>
+      <workItem from="1603368377620" duration="5175000" />
+      <workItem from="1604222756547" duration="47406000" />
+      <workItem from="1605322096058" duration="19012000" />
+      <workItem from="1607127807276" duration="1868000" />
+      <workItem from="1608552728038" duration="378000" />
+      <workItem from="1608553115347" duration="2394000" />
+      <workItem from="1608556123637" duration="4154000" />
+      <workItem from="1608639728531" duration="33194000" />
+      <workItem from="1609746969990" duration="16029000" />
+      <workItem from="1609997618680" duration="6211000" />
+      <workItem from="1610259409097" duration="9324000" />
+      <workItem from="1611404578248" duration="597000" />
+      <workItem from="1612356481470" duration="598000" />
+      <workItem from="1612764584837" duration="597000" />
+      <workItem from="1612765263270" duration="8380000" />
+      <workItem from="1614728685439" duration="2583000" />
+      <workItem from="1614898030620" duration="18758000" />
+      <workItem from="1616327069038" duration="2299000" />
+    </task>
+    <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
+      <created>1603456180595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603456180595</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SOLID: SRP">
+      <created>1604224994234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604224994234</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SOLID: OCP">
+      <created>1604321092973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604321092973</updated>
+    </task>
+    <task id="LOCAL-00004" summary="SOLID: LSP">
+      <created>1604408791488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604408791488</updated>
+    </task>
+    <task id="LOCAL-00005" summary="SOLID: LSP">
+      <created>1604409007644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604409007644</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SOLID: ISP">
+      <created>1604740789748</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604740789748</updated>
+    </task>
+    <task id="LOCAL-00007" summary="distributed systems: zookeeper">
+      <created>1604801817641</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604801817641</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Revert &quot;distributed systems: zookeeper&quot;&#10;&#10;This reverts commit 951a0396">
+      <created>1604801849370</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604801849370</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Revert &quot;Revert &quot;distributed systems: zookeeper&quot;&quot;&#10;&#10;This reverts commit 25e7e8db">
+      <created>1604801871335</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604801871335</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix">
+      <created>1604801995616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604801995616</updated>
+    </task>
+    <task id="LOCAL-00011" summary="watcher">
+      <created>1604822639929</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604822639929</updated>
+    </task>
+    <task id="LOCAL-00012" summary="leader reelection">
+      <created>1604823653139</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604823653139</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ServiceRegistry">
+      <created>1604832609190</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604832609190</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reflection">
+      <created>1605100118931</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605100118931</updated>
+    </task>
+    <task id="LOCAL-00015" summary="reflection">
+      <created>1605188051270</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605188051270</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reflection">
+      <created>1605270570944</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605270570944</updated>
+    </task>
+    <task id="LOCAL-00017" summary="reflection">
+      <created>1605350339166</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605350339166</updated>
+    </task>
+    <task id="LOCAL-00018" summary="kafka init">
+      <created>1608554540450</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608554540450</updated>
+    </task>
+    <task id="LOCAL-00019" summary="kafka config">
+      <created>1608556682335</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608556682335</updated>
+    </task>
+    <task id="LOCAL-00020" summary="kafka integration test">
+      <created>1608639541130</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608639541130</updated>
+    </task>
+    <task id="LOCAL-00021" summary="kafka unit test">
+      <created>1608643638799</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608643638799</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ddd in practice init">
+      <created>1608976348726</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608976348726</updated>
+    </task>
+    <task id="LOCAL-00023" summary="implements Money">
+      <created>1608982681275</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608982681275</updated>
+    </task>
+    <task id="LOCAL-00024" summary="implements MoneyTest">
+      <created>1608983551488</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608983551488</updated>
+    </task>
+    <task id="LOCAL-00025" summary="implements SnackMachineTest">
+      <created>1609059126072</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1609059126072</updated>
+    </task>
+    <task id="LOCAL-00026" summary="persistence">
+      <created>1609065871735</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1609065871735</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor using aggregates">
+      <created>1609158053817</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1609158053817</updated>
+    </task>
+    <task id="LOCAL-00028" summary="more requirements">
+      <created>1609162954045</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1609162954045</updated>
+    </task>
+    <task id="LOCAL-00029" summary="new bounded context: ATM">
+      <created>1609248038134</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1609248038134</updated>
+    </task>
+    <task id="LOCAL-00030" summary="domain event">
+      <created>1609645437765</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609645437770</updated>
+    </task>
+    <task id="LOCAL-00031" summary="wait/notify on Producer/Consumer">
+      <created>1609751166985</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609751166985</updated>
+    </task>
+    <task id="LOCAL-00032" summary="false sharing">
+      <created>1609757334820</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1609757334820</updated>
+    </task>
+    <task id="LOCAL-00033" summary="race condition">
+      <created>1609810944476</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1609810944476</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ProducerConsumerWithLocks">
+      <created>1609999304239</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1609999304239</updated>
+    </task>
+    <task id="LOCAL-00035" summary="CacheWithReadWriteLock">
+      <created>1609999926509</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1609999926509</updated>
+    </task>
+    <task id="LOCAL-00036" summary="completableFuture">
+      <created>1610364827630</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1610364827630</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Revert &quot;Revert &quot;distributed systems: zookeeper&quot;&quot;&#10;&#10;This reverts commit 25e7e8db" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="watcher" />
+    <MESSAGE value="leader reelection" />
+    <MESSAGE value="ServiceRegistry" />
+    <MESSAGE value="reflection" />
+    <MESSAGE value="kafka init" />
+    <MESSAGE value="kafka config" />
+    <MESSAGE value="kafka integration test" />
+    <MESSAGE value="kafka unit test" />
+    <MESSAGE value="ddd in practice init" />
+    <MESSAGE value="implements Money" />
+    <MESSAGE value="implements MoneyTest" />
+    <MESSAGE value="implements SnackMachineTest" />
+    <MESSAGE value="persistence" />
+    <MESSAGE value="refactor using aggregates" />
+    <MESSAGE value="more requirements" />
+    <MESSAGE value="new bounded context: ATM" />
+    <MESSAGE value="domain event" />
+    <MESSAGE value="wait/notify on Producer/Consumer" />
+    <MESSAGE value="false sharing" />
+    <MESSAGE value="race condition" />
+    <MESSAGE value="ProducerConsumerWithLocks" />
+    <MESSAGE value="CacheWithReadWriteLock" />
+    <MESSAGE value="completableFuture" />
+    <option name="LAST_COMMIT_MESSAGE" value="completableFuture" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/reflection/constructors/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/reflection/modifiers/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/snackmachine/value/object/SnackPile.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/snackmachine/entity/SnackMachine.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/snackmachine/value/object/SnackPile.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/Library/Java/JavaVirtualMachines/adopt-openjdk-11.0.9.1/Contents/Home/lib/src.zip!/java.base/java/lang/Error.java</url>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.0/mybatis-plus-core-3.3.0-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java</url>
+          <line>89</line>
+          <properties class="com.baomidou.mybatisplus.core.mapper.BaseMapper" method="insert">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

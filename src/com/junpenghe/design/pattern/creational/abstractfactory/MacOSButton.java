@@ -8,6 +8,6 @@ package com.junpenghe.design.pattern.creational.abstractfactory;
 public class MacOSButton implements Button {
     @Override
     public void paint() {
-        System.out.println("You have created WindowsButton.");
+        System.out.println("You have created MacOsButton.");
     }
 }

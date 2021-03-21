@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/watcher/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/leader/election/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/registry/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/tf-idf/pom.xml" />
+        <option value="$PROJECT_DIR$/com/junpenghe/kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="adopt-openjdk-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

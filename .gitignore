@@ -1,4 +1,3 @@
-/.idea/
 /target/
 /src/distributed.systems/target/
 /src/com/junpenghe/distributed/systems/zookeeper/leader/election/target/classes/
