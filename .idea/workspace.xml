@@ -23,22 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/Interview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/AQSExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/LockSupportExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/UnReentrantLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/concurrency/src/lock/UnReentrantLockProducerConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/entity/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/data/structure/b/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/data/structure/b/tree/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/entity/SnackMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/entity/SnackMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/entity/SnackMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/entity/SnackMachineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/value/object/MoneyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/test/java/pluralsight/ddd/practice/value/object/MoneyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/MacOSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/MacOSButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/repository/FlightRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/test/java/com/junpenghe/spring/spring/data/CrudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/event/BalanceChangedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/event/BalanceChangedEventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/LibraryEventsConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/LibraryEventsConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spring/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +50,9 @@
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -82,6 +76,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -120,6 +115,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.junpenghe.spring.spring.data" />
       <recent name="pluralsight.ddd.practice.snackmachine.value" />
       <recent name="pluralsight.ddd.practice.snackmachine" />
       <recent name="" />
@@ -214,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringBootDemoApplicationTests">
+  <component name="RunManager" selected="JUnit.CrudTest">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.design.pattern.creational.abstractfactory.Demo" />
       <module name="java-learning-note" />
@@ -241,19 +237,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockSupportExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock.LockSupportExp" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MIterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.MIterview" />
       <module name="java-learning-note" />
@@ -267,15 +250,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.spring.spring.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junpenghe.spring.spring.data" />
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.spring.spring.data.CrudTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -331,24 +327,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LockSupportExp" />
       <item itemvalue="Application.Demo" />
       <item itemvalue="Application.Interview" />
       <item itemvalue="Application.MIterview" />
+      <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
       <item itemvalue="Spring Boot.LibraryEventsConsumerApplication" />
       <item itemvalue="Spring Boot.PracticeApplication" />
       <item itemvalue="Spring Boot.SpringDataApplication" />
-      <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
+      <item itemvalue="JUnit.CrudTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrudTest" />
         <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
         <item itemvalue="Application.MIterview" />
         <item itemvalue="Application.Interview" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.LockSupportExp" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +376,8 @@
       <workItem from="1612765263270" duration="8380000" />
       <workItem from="1614728685439" duration="2583000" />
       <workItem from="1614898030620" duration="18758000" />
-      <workItem from="1616327069038" duration="2299000" />
+      <workItem from="1616327069038" duration="3313000" />
+      <workItem from="1616330406098" duration="905000" />
     </task>
     <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
       <created>1603456180595</created>
@@ -634,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610364827630</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="spring data init">
+      <created>1616329626664</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1616329626664</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Revert &quot;Revert &quot;distributed systems: zookeeper&quot;&quot;&#10;&#10;This reverts commit 25e7e8db" />
     <MESSAGE value="fix" />
     <MESSAGE value="watcher" />
     <MESSAGE value="leader reelection" />
@@ -679,7 +682,8 @@
     <MESSAGE value="ProducerConsumerWithLocks" />
     <MESSAGE value="CacheWithReadWriteLock" />
     <MESSAGE value="completableFuture" />
-    <option name="LAST_COMMIT_MESSAGE" value="completableFuture" />
+    <MESSAGE value="spring data init" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring data init" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -713,6 +717,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/Library/Java/JavaVirtualMachines/adopt-openjdk-11.0.9.1/Contents/Home/lib/src.zip!/java.base/java/lang/Error.java</url>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/junpenghe/spring/src/test/java/com/junpenghe/spring/spring/data/SpringBootDemoApplicationTests.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.0/mybatis-plus-core-3.3.0-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java</url>
