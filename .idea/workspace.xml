@@ -23,16 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/repository/FlightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/test/java/com/junpenghe/spring/spring/data/CrudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/test/java/com/junpenghe/spring/spring/data/DerivedQueryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/event/BalanceChangedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/src/main/java/pluralsight/ddd/practice/event/BalanceChangedEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spring/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/repository/FlightRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/repository/FlightRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +44,8 @@
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -210,20 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrudTest">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.junpenghe.design.pattern.creational.abstractfactory.Demo" />
-      <module name="java-learning-note" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.junpenghe.design.pattern.creational.abstractfactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DerivedQueryTest">
     <configuration name="Interview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.Interview" />
       <module name="java-learning-note" />
@@ -271,6 +251,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.junpenghe.spring.spring.data" />
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.spring.spring.data.CrudTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DerivedQueryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junpenghe.spring.spring.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junpenghe.spring.spring.data" />
+      <option name="MAIN_CLASS_NAME" value="com.junpenghe.spring.spring.data.DerivedQueryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -327,7 +322,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Demo" />
       <item itemvalue="Application.Interview" />
       <item itemvalue="Application.MIterview" />
       <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
@@ -337,14 +331,15 @@
       <item itemvalue="Spring Boot.PracticeApplication" />
       <item itemvalue="Spring Boot.SpringDataApplication" />
       <item itemvalue="JUnit.CrudTest" />
+      <item itemvalue="JUnit.DerivedQueryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DerivedQueryTest" />
         <item itemvalue="JUnit.CrudTest" />
         <item itemvalue="JUnit.SpringBootDemoApplicationTests" />
         <item itemvalue="Application.MIterview" />
         <item itemvalue="Application.Interview" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +372,7 @@
       <workItem from="1614728685439" duration="2583000" />
       <workItem from="1614898030620" duration="18758000" />
       <workItem from="1616327069038" duration="3313000" />
-      <workItem from="1616330406098" duration="905000" />
+      <workItem from="1616330406098" duration="2731000" />
     </task>
     <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
       <created>1603456180595</created>
@@ -638,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616329626664</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="JPA crud repo">
+      <created>1616331620479</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1616331620479</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fix" />
     <MESSAGE value="watcher" />
     <MESSAGE value="leader reelection" />
     <MESSAGE value="ServiceRegistry" />
@@ -683,7 +684,8 @@
     <MESSAGE value="CacheWithReadWriteLock" />
     <MESSAGE value="completableFuture" />
     <MESSAGE value="spring data init" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring data init" />
+    <MESSAGE value="JPA crud repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA crud repo" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
