@@ -1,5 +1,8 @@
-#spring:
-#  datasource:
-#    url: jdbc:postgresql://localhost:30001/alaitp
-#    username: 'hejunpeng'
-#    password: '921102'
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:30001/conference_app
+    username: 'hejunpeng'
+    password: '921102'
+server:
+  port: 58080

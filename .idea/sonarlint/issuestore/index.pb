@@ -392,8 +392,6 @@ q
 Asrc/com/junpenghe/spring/.mvn/wrapper/MavenWrapperDownloader.java,0/4/04e9366338639e5c3dc4a322ea062d84511f775e
 Š
 Zsrc/com/junpenghe/spring/src/main/java/com/junpenghe/spring/spring/data/entity/Flight.java,5/4/54af3838591c4e3f704633d93f1fe09bb20758fc
-l
-<src/com/junpenghe/spring/src/main/resources/application.yaml,b/7/b7fe008362266e6a66dd3f7784b9687d3431a2dd
 S
 #src/com/junpenghe/spring/.gitignore,d/8/d8a16aa16da64777f7ead5ae13785585b02d054b
 M
