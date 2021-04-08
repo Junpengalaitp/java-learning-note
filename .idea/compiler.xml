@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -8,25 +9,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring" />
+        <module name="spark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ddd-in-practice" target="11" />
-      <module name="leader.election" target="11" />
-      <module name="library-event-consumer" target="11" />
-      <module name="library-event-producer" target="11" />
-      <module name="registry" target="11" />
+      <module name="spark" target="11" />
       <module name="spring" target="11" />
-      <module name="tf-idf" target="11" />
-      <module name="watcher" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="concurrency" options="-parameters  --add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED  --add-exports=java.base/sun.net=ALL-UNNAMED  --add-exports=java.base/sun.net.util=ALL-UNNAMED  --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED  --add-exports=java.base/sun.net.www=ALL-UNNAMED" />
-      <module name="ddd-in-practice" options="-parameters" />
-      <module name="library-event-consumer" options="-parameters" />
-      <module name="library-event-producer" options="-parameters" />
       <module name="spring" options="-parameters" />
     </option>
   </component>
