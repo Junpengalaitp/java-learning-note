@@ -6,10 +6,12 @@ import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.serialization.IntegerDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.json.JSONException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -29,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @EmbeddedKafka(topics = {"library-events"}, partitions = 3)
 @TestPropertySource(properties = {"spring.kafka.producer.bootstrap-servers=${spring.embedded.kafka.brokers}",
         "spring.kafka.admin.properties.bootstrap.servers=${spring.embedded.kafka.brokers}"})
-public class LibraryEventControllerIntegrationTest {
+class LibraryEventControllerIntegrationTest {
 
     @Autowired
     TestRestTemplate restTemplate;
@@ -54,7 +56,7 @@ public class LibraryEventControllerIntegrationTest {
 
     @Test
     @Timeout(5)
-    void postLibraryEvent() throws InterruptedException {
+    void postLibraryEvent() throws InterruptedException, JSONException {
         //given
         Book book = Book.builder()
                 .bookId(123)
@@ -79,7 +81,7 @@ public class LibraryEventControllerIntegrationTest {
         ConsumerRecord<Integer, String> consumerRecord = KafkaTestUtils.getSingleRecord(consumer, "library-events");
         String expectedRecord = "{\"libraryEventId\":null,\"book\":{\"bookId\":123,\"bookName\":\"Kafka using Spring Boot\",\"bookAuthor\":\"Dilip\"},\"libraryEventType\":\"NEW\"}";
         String value = consumerRecord.value();
-        assertEquals(expectedRecord, value);
+        JSONAssert.assertEquals(expectedRecord, value, true);
 
     }
 }

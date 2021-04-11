@@ -7,3 +7,5 @@
 /src/com/junpenghe/distributed/systems/network/comunication/http-server/http-server.iml
 /src/com/junpenghe/concurrency/concurrency.iml
 /.idea/sonarlint/issuestore/
+/src/com/junpenghe/spark/target/classes/com/junpenghe/
+/src/com/junpenghe/kafka/library.event.producer/target/

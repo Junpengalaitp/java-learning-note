@@ -2,6 +2,7 @@ package kafka.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import kafka.config.TopicName;
 import kafka.domain.LibraryEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -16,7 +17,6 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -26,8 +26,6 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class LibraryEventProducer {
 
-    private static final String topic = "library-events";
-
     @Autowired
     private KafkaTemplate<Integer, String> kafkaTemplate;
     @Autowired
@@ -36,38 +34,18 @@ public class LibraryEventProducer {
     public void sendLibraryEvent(LibraryEvent libraryEvent) throws JsonProcessingException {
         Integer key = libraryEvent.getLibraryEventId();
         String value = objectMapper.writeValueAsString(libraryEvent);
-        ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.sendDefault(key, value);
-        listenableFuture.addCallback(new ListenableFutureCallback<>() {
-            @Override
-            public void onFailure(Throwable throwable) {
-                handleFailure(key, value, throwable);
-            }
-
-            @Override
-            public void onSuccess(SendResult<Integer, String> result) {
-                handleSuccess(key, value, result);
-            }
-        });
+        ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(TopicName.LIBRARY_EVENTS, key, value);
+        listenableFuture.addCallback(new CustomCallBack(key, value));
     }
 
     public ListenableFuture<SendResult<Integer, String>> sendLibraryEventAlternative(LibraryEvent libraryEvent) throws JsonProcessingException {
         Integer key = libraryEvent.getLibraryEventId();
         String value = objectMapper.writeValueAsString(libraryEvent);
 
-        ProducerRecord<Integer, String> producerRecord = buildProducerRecord(key, value, topic);
+        ProducerRecord<Integer, String> producerRecord = buildProducerRecord(key, value, TopicName.LIBRARY_EVENTS);
 
         ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(producerRecord);
-        listenableFuture.addCallback(new ListenableFutureCallback<>() {
-            @Override
-            public void onFailure(Throwable throwable) {
-                handleFailure(key, value, throwable);
-            }
-
-            @Override
-            public void onSuccess(SendResult<Integer, String> result) {
-                handleSuccess(key, value, result);
-            }
-        });
+        listenableFuture.addCallback(new CustomCallBack(key, value));
 
         return listenableFuture;
     }
@@ -83,8 +61,9 @@ public class LibraryEventProducer {
         String value = objectMapper.writeValueAsString(libraryEvent);
         SendResult<Integer, String> sendResult = null;
         try {
-            sendResult = kafkaTemplate.sendDefault(key, value)
-                    .get(1, TimeUnit.SECONDS);
+            ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(TopicName.LIBRARY_EVENTS, key, value);
+            listenableFuture.addCallback(new CustomCallBack(key, value));
+            sendResult = listenableFuture.get();
         } catch (InterruptedException | ExecutionException e) {
             log.error("InterruptedException | ExecutionException Sending the Message and the exception is {}", e.getMessage());
             e.printStackTrace();
@@ -95,7 +74,31 @@ public class LibraryEventProducer {
         return sendResult;
     }
 
-    private void handleFailure(Integer key, String value, Throwable throwable) {
+
+}
+
+@Slf4j
+class CustomCallBack implements ListenableFutureCallback<SendResult<Integer, String>> {
+
+    private final Integer key;
+    private final String value;
+
+    public CustomCallBack(Integer key, String value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    @Override
+    public void onFailure(Throwable ex) {
+        handleFailure(ex);
+    }
+
+    @Override
+    public void onSuccess(SendResult<Integer, String> result) {
+        handleSuccess(key, value, result);
+    }
+
+    private void handleFailure(Throwable throwable) {
         log.error("Error Sending the Message and the exception is {}", throwable.getMessage());
         try {
             throw throwable;
@@ -105,6 +108,7 @@ public class LibraryEventProducer {
     }
 
     private void handleSuccess(Integer key, String value, SendResult<Integer, String> result) {
-        log.info("Message Sent Successfully for the key: {} and the value is: {} partition is {}", key, value, result.getRecordMetadata().partition());
+        log.info("Message Sent Successfully for the key: {} and the value is: {} partition is {}, value is {}", key, value,
+                result.getRecordMetadata().partition(), result.getProducerRecord().value());
     }
 }

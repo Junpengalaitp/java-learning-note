@@ -38,11 +38,11 @@ class LibraryEventControllerUnitTest {
 
         LibraryEvent libraryEvent = LibraryEvent.builder()
                 .libraryEventId(null)
-                .book(new Book())
+                .book(book)
                 .build();
 
         String json = objectMapper.writeValueAsString(libraryEvent);
-        doNothing().when(producer).sendLibraryEventAlternative(libraryEvent);
+        doNothing().when(producer).sendLibraryEvent(libraryEvent);
 
         mockMvc.perform(post("/v1/libraryevent")
                 .content(json)

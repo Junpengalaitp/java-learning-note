@@ -1,6 +1,5 @@
 package com.junpenghe.design.pattern.creational.abstractfactory;
 
-import com.junpenghe.spring.Application;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
