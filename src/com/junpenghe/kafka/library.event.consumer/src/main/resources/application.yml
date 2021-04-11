@@ -9,6 +9,10 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: library-events-listner-group
   datasource:
-    url: jdbc:postgresql://localhost:30001/alaitp
+    url: jdbc:postgresql://localhost:30001/kafka_learning
     username: "hejunpeng"
     password: "921102"
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
