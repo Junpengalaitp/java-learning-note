@@ -14,11 +14,13 @@
         <module name="library-event-producer" />
         <module name="practice" />
         <module name="spark" />
+        <module name="library-event-consumer" />
         <module name="leader.election" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="leader.election" target="11" />
+      <module name="library-event-consumer" target="11" />
       <module name="library-event-producer" target="11" />
       <module name="practice" target="11" />
       <module name="registry" target="11" />
@@ -30,6 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="concurrency" options="-parameters  --add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED  --add-exports=java.base/sun.net=ALL-UNNAMED  --add-exports=java.base/sun.net.util=ALL-UNNAMED  --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED  --add-exports=java.base/sun.net.www=ALL-UNNAMED" />
+      <module name="library-event-consumer" options="-parameters" />
       <module name="library-event-producer" options="-parameters" />
       <module name="practice" options="-parameters" />
       <module name="spring" options="-parameters" />

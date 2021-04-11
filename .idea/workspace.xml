@@ -23,83 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_csv_2_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_13_2_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_scala_logging_scala_logging_2_13_3_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_api_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_json_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_13_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_13_test_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_test_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_test_utils_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_test_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_test_autoconfigure_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_collection_compat_2_13_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_java8_compat_2_13_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_6_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_test_2_6_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/config/TopicName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/config/TopicName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/consumer/LibraryEventConsumerManualOffset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/design/pattern/creational/abstractfactory/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/config/AutoCreateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/config/AutoCreateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/LibraryEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/consumer/LibraryEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/config/LibraryEventConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/config/LibraryEventConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/controller/LibraryEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/controller/LibraryEventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/producer/LibraryEventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/java/kafka/producer/LibraryEventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/test/java/kafka/controller/LibraryEventControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/test/java/kafka/controller/LibraryEventControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/test/java/kafka/controller/LibraryEventControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/src/test/java/kafka/controller/LibraryEventControllerUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,10 +130,11 @@
       <recent name="kafka.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kafka.library.event.consumer.consumer" />
+      <recent name="kafka.library.event.consumer.config" />
       <recent name="com.junpenghe.spring.spring.data" />
       <recent name="" />
       <recent name="com.junpenghe.solid.srp.coupling.after" />
-      <recent name="com.junpenghe.solid.srp.cohesion.after" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -280,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryEventControllerIntegrationTest">
+  <component name="RunManager" selected="Spring Boot.LibraryEventsConsumerApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.Main" />
       <module name="spark" />
@@ -386,6 +320,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryEventsConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="library-event-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kafka.library.event.consumer.LibraryEventsConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CrudTest" />
@@ -393,12 +334,13 @@
       <item itemvalue="Spring Boot.DDDPracticeApplication" />
       <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
       <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
+      <item itemvalue="Spring Boot.LibraryEventsConsumerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
         <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
         <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
-        <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CrudTest" />
       </list>
@@ -436,7 +378,7 @@
       <workItem from="1616330406098" duration="2731000" />
       <workItem from="1616575277904" duration="3147000" />
       <workItem from="1617839462667" duration="5663000" />
-      <workItem from="1618124823647" duration="2644000" />
+      <workItem from="1618124823647" duration="5755000" />
     </task>
     <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
       <created>1603456180595</created>
@@ -718,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617885744676</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Kafka producer review">
+      <created>1618127573435</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1618127573436</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="ServiceRegistry" />
     <MESSAGE value="reflection" />
     <MESSAGE value="kafka init" />
     <MESSAGE value="kafka config" />
@@ -763,7 +711,8 @@
     <MESSAGE value="JPA crud repo" />
     <MESSAGE value="JPA with postgresql" />
     <MESSAGE value="Spark init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spark init" />
+    <MESSAGE value="Kafka producer review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka producer review" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

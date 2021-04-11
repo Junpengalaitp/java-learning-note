@@ -9,6 +9,6 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: library-events-listner-group
   datasource:
-    url: jdbc:postgresql://localhost:5432/alaitp
+    url: jdbc:postgresql://localhost:30001/alaitp
     username: "hejunpeng"
     password: "921102"
