@@ -23,15 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/entity/LibraryEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/entity/LibraryEventType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/repository/LibraryEventsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/service/LibraryEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_12_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_12_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/consumer/LibraryEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/consumer/LibraryEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/spark/src/main/java/com/junpenghe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/spark/src/main/java/com/junpenghe/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -58,9 +58,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/AbstractJavaRDDLike.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0-sources.jar!/org/apache/spark/api/java/function/PairFunction.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple22.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple2.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaSparkContext.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaRDD.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Product20.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple20.scala" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jETiEBLSo9UYJwnfBgX6GzedPf" />
   <component name="ProjectViewState">
@@ -90,7 +103,10 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36666667" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -213,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LibraryEventsConsumerApplication">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junpenghe.Main" />
       <module name="spark" />
@@ -227,15 +243,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -329,18 +343,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CrudTest" />
-      <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
-      <item itemvalue="Spring Boot.DDDPracticeApplication" />
-      <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
       <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
+      <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
+      <item itemvalue="Spring Boot.DDDPracticeApplication" />
       <item itemvalue="Spring Boot.LibraryEventsConsumerApplication" />
+      <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
-        <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
-        <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
+        <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
+        <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
         <item itemvalue="JUnit.CrudTest" />
       </list>
     </recent_temporary>
@@ -377,7 +391,11 @@
       <workItem from="1616330406098" duration="2731000" />
       <workItem from="1616575277904" duration="3147000" />
       <workItem from="1617839462667" duration="5663000" />
-      <workItem from="1618124823647" duration="8320000" />
+      <workItem from="1618124823647" duration="8822000" />
+      <workItem from="1618142591139" duration="185000" />
+      <workItem from="1618142803860" duration="244000" />
+      <workItem from="1618143141611" duration="1869000" />
+      <workItem from="1618145084255" duration="792000" />
     </task>
     <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
       <created>1603456180595</created>
@@ -673,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618131127804</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Kafka consumer persistence">
+      <created>1618133879518</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1618133879518</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,7 +718,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="kafka init" />
     <MESSAGE value="kafka config" />
     <MESSAGE value="kafka integration test" />
     <MESSAGE value="kafka unit test" />
@@ -718,7 +742,8 @@
     <MESSAGE value="Spark init" />
     <MESSAGE value="Kafka producer review" />
     <MESSAGE value="Kafka consumer review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kafka consumer review" />
+    <MESSAGE value="Kafka consumer persistence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka consumer persistence" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
