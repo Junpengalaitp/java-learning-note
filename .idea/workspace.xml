@@ -23,9 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085f8bcf-d535-443c-8352-4d37f283309d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_12_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_12_3_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/test/java/kafka/library/event/consumer/LibraryEventsConsumerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/config/LibraryEventConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/src/main/java/kafka/library/event/consumer/config/LibraryEventConsumerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +64,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple22.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaSparkContext.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/AbstractJavaRDDLike.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0-sources.jar!/org/apache/spark/api/java/function/PairFunction.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple22.scala" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple2.scala" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaSparkContext.class" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaRDD.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Product20.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple2.scala" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.1.0/spark-core_2.12-3.1.0.jar!/org/apache/spark/api/java/JavaRDD.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/Tuple20.scala" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -248,19 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LibraryEventControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-event-producer" />
       <extension name="coverage">
@@ -347,14 +334,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.junpenghe.spring.spring.data.SpringBootDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.LibraryEventControllerIntegrationTest" />
       <item itemvalue="JUnit.LibraryEventControllerUnitTest" />
+      <item itemvalue="JUnit.LibraryEventsConsumerApplicationTests" />
       <item itemvalue="Spring Boot.DDDPracticeApplication" />
       <item itemvalue="Spring Boot.LibraryEventsConsumerApplication" />
       <item itemvalue="Spring Boot.LibraryEventProducerApplication" />
-      <item itemvalue="JUnit.LibraryEventsConsumerApplicationTests" />
+      <item itemvalue="Spring Boot.SpringBootDemoApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -403,7 +398,9 @@
       <workItem from="1618142803860" duration="244000" />
       <workItem from="1618143141611" duration="1869000" />
       <workItem from="1618145084255" duration="2299000" />
-      <workItem from="1618230189738" duration="1262000" />
+      <workItem from="1618230189738" duration="2224000" />
+      <workItem from="1618317158765" duration="254000" />
+      <workItem from="1618317572441" duration="903000" />
     </task>
     <task id="LOCAL-00001" summary="use polymorphism for better switch statement">
       <created>1603456180595</created>
@@ -713,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618145952852</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Kafka integration test">
+      <created>1618231486161</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1618231486162</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -733,7 +737,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="kafka integration test" />
     <MESSAGE value="kafka unit test" />
     <MESSAGE value="ddd in practice init" />
     <MESSAGE value="implements Money" />
@@ -758,7 +761,8 @@
     <MESSAGE value="Kafka consumer review" />
     <MESSAGE value="Kafka consumer persistence" />
     <MESSAGE value="Spark" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spark" />
+    <MESSAGE value="Kafka integration test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka integration test" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
