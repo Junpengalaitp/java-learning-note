@@ -9,3 +9,7 @@
 /.idea/sonarlint/issuestore/
 /src/com/junpenghe/spark/target/classes/com/junpenghe/
 /src/com/junpenghe/kafka/library.event.producer/target/
+/src/com/junpenghe/spark/src/main/resources/exams/
+/src/com/junpenghe/spark/src/main/resources/subtitles/
+/src/com/junpenghe/spark/src/main/resources/viewing figures/
+/src/com/junpenghe/spark/target/classes/
