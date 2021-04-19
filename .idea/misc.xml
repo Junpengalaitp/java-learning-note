@@ -7,17 +7,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/junpenghe/spring/pom.xml" />
-        <option value="$PROJECT_DIR$/src/com/junpenghe/spark/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.producer/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/registry/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/leader/election/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/distributed/systems/zookeeper/watcher/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/ddd/pluralsight/ddd/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/junpenghe/kafka/library.event.consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/junpenghe/spark/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -19,7 +19,7 @@ public class ViewingFigures
 	@SuppressWarnings("resource")
 	public static void main(String[] args)
 	{
-		System.setProperty("hadoop.home.dir", "c:/hadoop");
+//		System.setProperty("hadoop.home.dir", "c:/hadoop");
 		Logger.getLogger("org.apache").setLevel(Level.WARN);
 
 		SparkConf conf = new SparkConf().setAppName("startingSpark").setMaster("local[*]");
